@@ -1,0 +1,274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal should render correctly 1`] = `
+<Modal
+  body="test"
+  hideModal={[MockFunction]}
+  id="abc123"
+  onClick={[MockFunction]}
+  primaryAction="test"
+  secondaryAction="test"
+  show={true}
+  title="test"
+>
+  <div>
+    <Modal
+      ariaHideApp={false}
+      bodyOpenClassName="ReactModal__Body--open"
+      closeTimeoutMS={0}
+      contentLabel="test"
+      isOpen={true}
+      parentSelector={[Function]}
+      portalClassName="ReactModalPortal"
+      role="dialog"
+      shouldCloseOnEsc={true}
+      shouldCloseOnOverlayClick={true}
+      shouldFocusAfterRender={true}
+      shouldReturnFocusAfterClose={true}
+      style={
+        Object {
+          "content": Object {
+            "bottom": "auto",
+            "left": "50%",
+            "marginRight": "-50%",
+            "right": "auto",
+            "top": "50%",
+            "transform": "translate(-50%, -50%)",
+          },
+        }
+      }
+    >
+      <Portal
+        containerInfo={
+          <div
+            class="ReactModalPortal"
+          >
+            <div
+              class="ReactModal__Overlay ReactModal__Overlay--after-open"
+              style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(255, 255, 255, 0.75);"
+            >
+              <div
+                aria-label="test"
+                class="ReactModal__Content ReactModal__Content--after-open"
+                role="dialog"
+                style="position: absolute; top: 50%; left: 50%; border: 1px solid #ccc; background: rgb(255, 255, 255); overflow: auto; border-radius: 4px; outline: none; padding: 20px; margin-right: -50%; transform: translate(-50%, -50%);"
+                tabindex="-1"
+              >
+                <button
+                  class="iconButton float-right mt-1"
+                  id="closeBt"
+                  title="Close"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-times fa-w-11 icon red"
+                    data-icon="times"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    viewBox="0 0 352 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="m-1"
+                >
+                  test
+                </div>
+                <div
+                  class="m-1 mt-3"
+                >
+                  <button
+                    class="btn btn-sm btn-secondary mr-2"
+                    type="button"
+                  >
+                    test
+                  </button>
+                  <button
+                    class="btn btn-sm btn-danger"
+                    type="button"
+                  >
+                    test
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      >
+        <ModalPortal
+          ariaHideApp={false}
+          bodyOpenClassName="ReactModal__Body--open"
+          closeTimeoutMS={0}
+          contentLabel="test"
+          defaultStyles={
+            Object {
+              "content": Object {
+                "WebkitOverflowScrolling": "touch",
+                "background": "#fff",
+                "border": "1px solid #ccc",
+                "borderRadius": "4px",
+                "bottom": "40px",
+                "left": "40px",
+                "outline": "none",
+                "overflow": "auto",
+                "padding": "20px",
+                "position": "absolute",
+                "right": "40px",
+                "top": "40px",
+              },
+              "overlay": Object {
+                "backgroundColor": "rgba(255, 255, 255, 0.75)",
+                "bottom": 0,
+                "left": 0,
+                "position": "fixed",
+                "right": 0,
+                "top": 0,
+              },
+            }
+          }
+          isOpen={true}
+          parentSelector={[Function]}
+          portalClassName="ReactModalPortal"
+          role="dialog"
+          shouldCloseOnEsc={true}
+          shouldCloseOnOverlayClick={true}
+          shouldFocusAfterRender={true}
+          shouldReturnFocusAfterClose={true}
+          style={
+            Object {
+              "content": Object {
+                "bottom": "auto",
+                "left": "50%",
+                "marginRight": "-50%",
+                "right": "auto",
+                "top": "50%",
+                "transform": "translate(-50%, -50%)",
+              },
+            }
+          }
+        >
+          <div
+            className="ReactModal__Overlay ReactModal__Overlay--after-open"
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            style={
+              Object {
+                "backgroundColor": "rgba(255, 255, 255, 0.75)",
+                "bottom": 0,
+                "left": 0,
+                "position": "fixed",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          >
+            <div
+              aria-label="test"
+              className="ReactModal__Content ReactModal__Content--after-open"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              onMouseUp={[Function]}
+              role="dialog"
+              style={
+                Object {
+                  "WebkitOverflowScrolling": "touch",
+                  "background": "#fff",
+                  "border": "1px solid #ccc",
+                  "borderRadius": "4px",
+                  "bottom": "auto",
+                  "left": "50%",
+                  "marginRight": "-50%",
+                  "outline": "none",
+                  "overflow": "auto",
+                  "padding": "20px",
+                  "position": "absolute",
+                  "right": "auto",
+                  "top": "50%",
+                  "transform": "translate(-50%, -50%)",
+                }
+              }
+              tabIndex="-1"
+            >
+              <button
+                className="iconButton float-right mt-1"
+                id="closeBt"
+                onClick={[MockFunction]}
+                title="Close"
+                type="button"
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className="icon red"
+                  fixedWidth={false}
+                  flip={null}
+                  icon="times"
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-times fa-w-11 icon red"
+                    data-icon="times"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 352 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </FontAwesomeIcon>
+              </button>
+              <div
+                className="m-1"
+              >
+                test
+              </div>
+              <div
+                className="m-1 mt-3"
+              >
+                <button
+                  className="btn btn-sm btn-secondary mr-2"
+                  onClick={[MockFunction]}
+                  type="button"
+                >
+                  test
+                </button>
+                <button
+                  className="btn btn-sm btn-danger"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  test
+                </button>
+              </div>
+            </div>
+          </div>
+        </ModalPortal>
+      </Portal>
+    </Modal>
+  </div>
+</Modal>
+`;

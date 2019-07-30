@@ -1,0 +1,30 @@
+$primaryLight: #90caf9;
+$primary: #2466F6; // 36, 102, 246
+$primary400: #42a5f5;
+$primary500: #2196f3;
+$primary600: #1e88e5;
+$primary700: #1976d2;
+$primary800: #1565c0;
+$primaryDark: #0d47a1;
+$accentColor: #719743;
+$logoBlue: #62B4E1;
+$deepGrey: #555555;
+
+.primaryColor {
+  color: $primary;
+}
+.accentColor {
+  color: $accentColor;
+}
+.green {
+  color: #43a047;
+}
+.red {
+  color: #e53935;
+}
+.grey {
+  color: #444444;
+}
+.white {
+  color: white;
+}

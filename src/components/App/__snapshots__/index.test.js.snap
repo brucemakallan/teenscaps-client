@@ -1,0 +1,677 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <App>
+    <ToastContainer
+      autoClose={5000}
+      bodyClassName={null}
+      className={null}
+      closeButton={
+        <CloseButton
+          ariaLabel="close"
+        />
+      }
+      closeOnClick={true}
+      draggable={true}
+      draggablePercent={80}
+      hideProgressBar={false}
+      newestOnTop={false}
+      pauseOnFocusLoss={true}
+      pauseOnHover={true}
+      position="top-right"
+      progressClassName={null}
+      progressStyle={null}
+      role="alert"
+      rtl={false}
+      style={null}
+      toastClassName={null}
+      transition={[Function]}
+    >
+      <div
+        className="Toastify"
+      />
+    </ToastContainer>
+    <BrowserRouter>
+      <Router
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+      >
+        <Switch>
+          <Route
+            component={
+              Object {
+                "$$typeof": Symbol(react.memo),
+                "WrappedComponent": [Function],
+                "compare": null,
+                "displayName": "Connect(Home)",
+                "type": [Function],
+              }
+            }
+            computedMatch={
+              Object {
+                "isExact": true,
+                "params": Object {},
+                "path": "/",
+                "url": "/",
+              }
+            }
+            exact={true}
+            location={
+              Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              }
+            }
+            path="/"
+          >
+            <Connect(Home)
+              history={
+                Object {
+                  "action": "POP",
+                  "block": [Function],
+                  "createHref": [Function],
+                  "go": [Function],
+                  "goBack": [Function],
+                  "goForward": [Function],
+                  "length": 1,
+                  "listen": [Function],
+                  "location": Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  },
+                  "push": [Function],
+                  "replace": [Function],
+                }
+              }
+              location={
+                Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              match={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+            >
+              <Home
+                getAllSectionsDispatch={[Function]}
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "createHref": [Function],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                location={
+                  Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+                sections={
+                  Array [
+                    Object {
+                      "__v": 0,
+                      "_id": "5c9fdcf69c5e1a0d891d506e",
+                      "array": Array [],
+                      "body": "test",
+                      "category": "test",
+                      "dateCreated": "1553980662739",
+                      "dateIn": "124231221",
+                      "dateOut": "124231222",
+                      "files": Array [
+                        Object {
+                          "title": "sample file",
+                          "url": "https://iviidev.info/downloads/files/sample.pdf",
+                        },
+                      ],
+                      "heading1": "test1",
+                      "heading2": "test2",
+                      "heading3": "test3",
+                      "heading4": "test4",
+                      "heading5": "test5",
+                      "heading6": "test6",
+                      "images": Array [
+                        "https://iviidev.info/downloads/images/sample.jpg",
+                      ],
+                      "parent": "312313432223",
+                    },
+                  ]
+                }
+              >
+                <div
+                  className="homepage"
+                  id="home-anchor"
+                >
+                  <NavBar>
+                    <div
+                      className="navigation-bar"
+                    >
+                      <div
+                        className="wrapper"
+                      >
+                        <header>
+                          <nav
+                            className=""
+                          >
+                            <div
+                              className="menu-icon"
+                            >
+                              <button
+                                className="iconButton"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                <FontAwesomeIcon
+                                  border={false}
+                                  className="white"
+                                  fixedWidth={false}
+                                  flip={null}
+                                  icon={
+                                    Object {
+                                      "icon": Array [
+                                        448,
+                                        512,
+                                        Array [],
+                                        "f0c9",
+                                        "M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z",
+                                      ],
+                                      "iconName": "bars",
+                                      "prefix": "fas",
+                                    }
+                                  }
+                                  inverse={false}
+                                  listItem={false}
+                                  mask={null}
+                                  pull={null}
+                                  pulse={false}
+                                  rotation={null}
+                                  size={null}
+                                  spin={false}
+                                  symbol={false}
+                                  title=""
+                                  transform={null}
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className="svg-inline--fa fa-bars fa-w-14 white"
+                                    data-icon="bars"
+                                    data-prefix="fas"
+                                    focusable="false"
+                                    role="img"
+                                    style={Object {}}
+                                    viewBox="0 0 448 512"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                                      fill="currentColor"
+                                      style={Object {}}
+                                    />
+                                  </svg>
+                                </FontAwesomeIcon>
+                              </button>
+                            </div>
+                            <div
+                              className="logo"
+                            >
+                              <span
+                                className="thin"
+                              >
+                                TEENS
+                              </span>
+                              <span
+                                className="bold"
+                              >
+                                CAPS
+                              </span>
+                            </div>
+                            <div
+                              className="menu"
+                            >
+                              <ul
+                                className=""
+                              >
+                                <li
+                                  key="0"
+                                >
+                                  <Link
+                                    activeClass="active-nav-link"
+                                    duration={500}
+                                    offset={-40}
+                                    smooth={true}
+                                    spy={true}
+                                    to="home-anchor"
+                                  >
+                                    <LinkElement
+                                      onClick={[Function]}
+                                    >
+                                      <a
+                                        onClick={[Function]}
+                                      >
+                                        Home
+                                      </a>
+                                    </LinkElement>
+                                  </Link>
+                                </li>
+                                <li
+                                  key="1"
+                                >
+                                  <Link
+                                    activeClass="active-nav-link"
+                                    duration={500}
+                                    offset={-40}
+                                    smooth={true}
+                                    spy={true}
+                                    to="about-anchor"
+                                  >
+                                    <LinkElement
+                                      onClick={[Function]}
+                                    >
+                                      <a
+                                        onClick={[Function]}
+                                      >
+                                        About
+                                      </a>
+                                    </LinkElement>
+                                  </Link>
+                                </li>
+                                <li
+                                  key="2"
+                                >
+                                  <Link
+                                    activeClass="active-nav-link"
+                                    duration={500}
+                                    offset={-40}
+                                    smooth={true}
+                                    spy={true}
+                                    to="services-anchor"
+                                  >
+                                    <LinkElement
+                                      onClick={[Function]}
+                                    >
+                                      <a
+                                        onClick={[Function]}
+                                      >
+                                        Services
+                                      </a>
+                                    </LinkElement>
+                                  </Link>
+                                </li>
+                                <li
+                                  key="3"
+                                >
+                                  <Link
+                                    activeClass="active-nav-link"
+                                    duration={500}
+                                    offset={-40}
+                                    smooth={true}
+                                    spy={true}
+                                    to="contacts-anchor"
+                                  >
+                                    <LinkElement
+                                      onClick={[Function]}
+                                    >
+                                      <a
+                                        onClick={[Function]}
+                                      >
+                                        Contacts
+                                      </a>
+                                    </LinkElement>
+                                  </Link>
+                                </li>
+                              </ul>
+                            </div>
+                          </nav>
+                        </header>
+                      </div>
+                    </div>
+                  </NavBar>
+                  <Connect(PageLoader)>
+                    <PageLoader
+                      dispatch={[Function]}
+                      showLoader={false}
+                    />
+                  </Connect(PageLoader)>
+                  <div
+                    className="page-header"
+                  />
+                  <div
+                    className="main-body"
+                    style={
+                      Object {
+                        "backgroundImage": "url(./images/crossword.png)",
+                      }
+                    }
+                  >
+                    <div
+                      className="large-footer section-padding responsive-flex"
+                      style={
+                        Object {
+                          "backgroundImage": "url(./images/prism.png)",
+                        }
+                      }
+                    >
+                      <div
+                        className="links-section responsive-flex-child half"
+                      >
+                        <ul>
+                          <li>
+                            <a
+                              href="/"
+                            >
+                              Home
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="/"
+                            >
+                              Our Business
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="/"
+                            >
+                              Careers
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="/"
+                            >
+                              About
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="/"
+                            >
+                              Contacts
+                            </a>
+                          </li>
+                        </ul>
+                        <div
+                          className="social-media"
+                        >
+                          <a
+                            href="http://twitter.com"
+                            key="http://twitter.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            <img
+                              alt="Twitter"
+                              className="social-media-logo"
+                              src="./images/twitter.png"
+                            />
+                          </a>
+                          <a
+                            href="http://facebook.com"
+                            key="http://facebook.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            <img
+                              alt="Facebook"
+                              className="social-media-logo"
+                              src="./images/facebook.png"
+                            />
+                          </a>
+                          <a
+                            href="http://instagram.com"
+                            key="http://instagram.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            <img
+                              alt="Instagram"
+                              className="social-media-logo"
+                              src="./images/instagram.png"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        className="contact-form-section responsive-flex-child half"
+                      >
+                        <Connect(ContactForm)>
+                          <ContactForm
+                            adminReducer={
+                              Object {
+                                "admin": Object {},
+                              }
+                            }
+                            loaderReducer={
+                              Object {
+                                "showLoader": false,
+                              }
+                            }
+                            sectionsReducer={
+                              Object {
+                                "section": Object {
+                                  "__v": 0,
+                                  "_id": "5c9fdcf69c5e1a0d891d506e",
+                                  "array": Array [],
+                                  "body": "test",
+                                  "category": "test",
+                                  "dateCreated": "1553980662739",
+                                  "dateIn": "124231221",
+                                  "dateOut": "124231222",
+                                  "files": Array [
+                                    Object {
+                                      "title": "sample file",
+                                      "url": "https://iviidev.info/downloads/files/sample.pdf",
+                                    },
+                                  ],
+                                  "heading1": "test1",
+                                  "heading2": "test2",
+                                  "heading3": "test3",
+                                  "heading4": "test4",
+                                  "heading5": "test5",
+                                  "heading6": "test6",
+                                  "images": Array [
+                                    "https://iviidev.info/downloads/images/sample.jpg",
+                                  ],
+                                  "parent": "312313432223",
+                                },
+                                "sections": Array [
+                                  Object {
+                                    "__v": 0,
+                                    "_id": "5c9fdcf69c5e1a0d891d506e",
+                                    "array": Array [],
+                                    "body": "test",
+                                    "category": "test",
+                                    "dateCreated": "1553980662739",
+                                    "dateIn": "124231221",
+                                    "dateOut": "124231222",
+                                    "files": Array [
+                                      Object {
+                                        "title": "sample file",
+                                        "url": "https://iviidev.info/downloads/files/sample.pdf",
+                                      },
+                                    ],
+                                    "heading1": "test1",
+                                    "heading2": "test2",
+                                    "heading3": "test3",
+                                    "heading4": "test4",
+                                    "heading5": "test5",
+                                    "heading6": "test6",
+                                    "images": Array [
+                                      "https://iviidev.info/downloads/images/sample.jpg",
+                                    ],
+                                    "parent": "312313432223",
+                                  },
+                                ],
+                              }
+                            }
+                            sendEmailDispatch={[Function]}
+                          >
+                            <div
+                              className="contact-form"
+                            >
+                              <form
+                                onSubmit={[Function]}
+                              >
+                                <div
+                                  className="form-group"
+                                  key="fullName"
+                                >
+                                  <input
+                                    className="form-control"
+                                    id="fullName"
+                                    name="fullName"
+                                    onChange={[Function]}
+                                    placeholder="Full Name"
+                                    required={true}
+                                    type="text"
+                                  />
+                                </div>
+                                <div
+                                  className="form-group"
+                                  key="email"
+                                >
+                                  <input
+                                    className="form-control"
+                                    id="email"
+                                    name="email"
+                                    onChange={[Function]}
+                                    placeholder="Email"
+                                    required={true}
+                                    type="email"
+                                  />
+                                </div>
+                                <div
+                                  className="form-group"
+                                  key="subject"
+                                >
+                                  <input
+                                    className="form-control"
+                                    id="subject"
+                                    name="subject"
+                                    onChange={[Function]}
+                                    placeholder="Subject"
+                                    required={true}
+                                    type="text"
+                                  />
+                                </div>
+                                <div
+                                  className="form-group"
+                                >
+                                  <textarea
+                                    className="form-control"
+                                    id="message"
+                                    name="message"
+                                    onChange={[Function]}
+                                    placeholder="Message"
+                                    required={true}
+                                    rows={5}
+                                  />
+                                </div>
+                                <button
+                                  className="btn btn-primary"
+                                  type="submit"
+                                >
+                                  SEND EMAIL
+                                </button>
+                              </form>
+                            </div>
+                          </ContactForm>
+                        </Connect(ContactForm)>
+                      </div>
+                    </div>
+                    <div
+                      className="small-footer responsive-flex"
+                    >
+                      <span
+                        className="responsive-flex-child half"
+                      >
+                        ©  
+                        2019
+                          LIFE Ministries Uganda. All Rights Reserved.
+                      </span>
+                      <a
+                        className="responsive-flex-child half developer"
+                        href="https://iviidev.info"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        Developer
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </Home>
+            </Connect(Home)>
+          </Route>
+        </Switch>
+      </Router>
+    </BrowserRouter>
+  </App>
+</Provider>
+`;

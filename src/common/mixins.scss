@@ -1,0 +1,16 @@
+@mixin no-outline {
+  outline: 0;
+  -webkit-appearance:none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+@mixin shaddows {
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(36, 102, 246, 0.3);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(36, 102, 246, 0.3);
+  box-shadow: 10px 10px 5px -4px rgba(36, 102, 246, 0.3);
+}
+@mixin gradientBg {
+  background: $accentColor;
+  background: linear-gradient(90deg, rgba(36,102,246,1) 35%, rgba(113,151,67,1) 100%);
+}

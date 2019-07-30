@@ -1,0 +1,526 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateWebsiteSection should render correctly 1`] = `
+<CreateWebsiteSection
+  createSectionDispatch={[MockFunction]}
+  history={
+    Object {
+      "push": [MockFunction],
+    }
+  }
+  sections={
+    Array [
+      Object {
+        "__v": 0,
+        "_id": "5c9fdcf69c5e1a0d891d506e",
+        "array": Array [],
+        "body": "test",
+        "category": "test",
+        "dateCreated": "1553980662739",
+        "dateIn": "124231221",
+        "dateOut": "124231222",
+        "files": Array [
+          Object {
+            "title": "sample file",
+            "url": "https://iviidev.info/downloads/files/sample.pdf",
+          },
+        ],
+        "heading1": "test1",
+        "heading2": "test2",
+        "heading3": "test3",
+        "heading4": "test4",
+        "heading5": "test5",
+        "heading6": "test6",
+        "images": Array [
+          "https://iviidev.info/downloads/images/sample.jpg",
+        ],
+        "parent": "312313432223",
+      },
+    ]
+  }
+>
+  <InputForm
+    addCloudinaryImage={[Function]}
+    addCloudinaryRawFile={[Function]}
+    addRow={[Function]}
+    allEntities={
+      Array [
+        Object {
+          "__v": 0,
+          "_id": "5c9fdcf69c5e1a0d891d506e",
+          "array": Array [],
+          "body": "test",
+          "category": "test",
+          "dateCreated": "1553980662739",
+          "dateIn": "124231221",
+          "dateOut": "124231222",
+          "files": Array [
+            Object {
+              "title": "sample file",
+              "url": "https://iviidev.info/downloads/files/sample.pdf",
+            },
+          ],
+          "heading1": "test1",
+          "heading2": "test2",
+          "heading3": "test3",
+          "heading4": "test4",
+          "heading5": "test5",
+          "heading6": "test6",
+          "images": Array [
+            "https://iviidev.info/downloads/images/sample.jpg",
+          ],
+          "parent": "312313432223",
+        },
+      ]
+    }
+    entity={
+      Object {
+        "category": "ARTICLE",
+        "files": Array [],
+        "images": Array [],
+        "tags": Array [],
+        "videos": Array [],
+      }
+    }
+    isNew={true}
+    onArrayChange={[Function]}
+    onChange={[Function]}
+    onSubmit={[Function]}
+    onTagAdd={[Function]}
+    onTagDelete={[Function]}
+    onTagDrag={[Function]}
+    removeRow={[Function]}
+    tagSuggestions={Array []}
+    title="Create New Website Section"
+  >
+    <div>
+      <h1>
+        Create New Website Section
+      </h1>
+      <form
+        className="inputForm"
+        id="customInputForm"
+        onSubmit={[Function]}
+      >
+        <div
+          className="form-group"
+          key="0"
+        >
+          <div>
+            Images
+            <span
+              className="red"
+              title="Required"
+            >
+               *
+            </span>
+          </div>
+          <button
+            className="btn btn-sm m-2 btn-outline-primary"
+            id="addRowBt"
+            onClick={[Function]}
+            type="button"
+          >
+            Upload Image
+          </button>
+        </div>
+        <div
+          className="form-group"
+          key="1"
+        >
+          <div>
+            Tags
+          </div>
+          <div
+            className="tags"
+          >
+            <DragDropContext(ReactTags)
+              delimiters={
+                Array [
+                  188,
+                  13,
+                ]
+              }
+              handleAddition={[Function]}
+              handleDelete={[Function]}
+              handleDrag={[Function]}
+              suggestions={Array []}
+              tags={Array []}
+            >
+              <ReactTags
+                allowAdditionFromPaste={true}
+                allowDeleteFromEmptyInput={true}
+                allowDragDrop={true}
+                allowUnique={true}
+                autocomplete={false}
+                autofocus={true}
+                delimiters={
+                  Array [
+                    188,
+                    13,
+                  ]
+                }
+                handleAddition={[Function]}
+                handleDelete={[Function]}
+                handleDrag={[Function]}
+                inline={true}
+                inputFieldPosition="inline"
+                labelField="text"
+                placeholder="Add new tag"
+                readOnly={false}
+                resetInputOnDelete={true}
+                suggestions={Array []}
+                tags={Array []}
+              >
+                <div
+                  className="ReactTags__tags react-tags-wrapper"
+                >
+                  <div
+                    className="ReactTags__selected"
+                  >
+                    <div
+                      className="ReactTags__tagInput"
+                    >
+                      <input
+                        aria-label="Add new tag"
+                        className="ReactTags__tagInputField"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onPaste={[Function]}
+                        placeholder="Add new tag"
+                        type="text"
+                      />
+                      <Suggestions
+                        classNames={
+                          Object {
+                            "activeSuggestion": "ReactTags__activeSuggestion",
+                            "remove": "ReactTags__remove",
+                            "selected": "ReactTags__selected",
+                            "suggestions": "ReactTags__suggestions",
+                            "tag": "ReactTags__tag",
+                            "tagInput": "ReactTags__tagInput",
+                            "tagInputField": "ReactTags__tagInputField",
+                            "tags": "ReactTags__tags",
+                          }
+                        }
+                        handleClick={[Function]}
+                        handleHover={[Function]}
+                        isFocused={false}
+                        labelField="text"
+                        minQueryLength={2}
+                        query=""
+                        selectedIndex={-1}
+                        suggestions={Array []}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </ReactTags>
+            </DragDropContext(ReactTags)>
+          </div>
+        </div>
+        <div
+          className="form-group"
+          key="2"
+        >
+          <div>
+            Parent
+          </div>
+          <select
+            className="form-control"
+            id="parent"
+            name="parent"
+            onChange={[Function]}
+          >
+            <option
+              value=""
+            >
+              N/A
+            </option>
+            <option
+              key="0"
+              value="5c9fdcf69c5e1a0d891d506e"
+            >
+              TEST: 5c9fdcf69c5e1a0d891d506e test1
+            </option>
+          </select>
+        </div>
+        <div
+          className="form-group"
+          key="3"
+        >
+          <div>
+            Category
+            <span
+              className="red"
+              title="Required"
+            >
+               *
+            </span>
+          </div>
+          <select
+            className="form-control"
+            id="category"
+            name="category"
+            onChange={[Function]}
+            required={true}
+            value="ARTICLE"
+          >
+            <option
+              key="0"
+              value="ARTICLE"
+            >
+              ARTICLE
+            </option>
+            <option
+              key="1"
+              value="ABOUT"
+            >
+              ABOUT
+            </option>
+            <option
+              key="2"
+              value="CAROUSEL"
+            >
+              CAROUSEL
+            </option>
+            <option
+              key="3"
+              value="SERVICE"
+            >
+              SERVICE
+            </option>
+            <option
+              key="4"
+              value="CONTACT"
+            >
+              CONTACT
+            </option>
+          </select>
+        </div>
+        <div
+          className="form-group"
+          key="4"
+        >
+          <div>
+            Heading1
+          </div>
+          <input
+            className="form-control"
+            defaultValue=""
+            id="heading1"
+            name="heading1"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-group"
+          key="5"
+        >
+          <div>
+            Heading2
+          </div>
+          <input
+            className="form-control"
+            defaultValue=""
+            id="heading2"
+            name="heading2"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-group"
+          key="6"
+        >
+          <div>
+            Heading3
+          </div>
+          <input
+            className="form-control"
+            defaultValue=""
+            id="heading3"
+            name="heading3"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-group"
+          key="7"
+        >
+          <div>
+            Heading4
+          </div>
+          <input
+            className="form-control"
+            defaultValue=""
+            id="heading4"
+            name="heading4"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-group"
+          key="8"
+        >
+          <div>
+            Heading5
+          </div>
+          <input
+            className="form-control"
+            defaultValue=""
+            id="heading5"
+            name="heading5"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-group"
+          key="9"
+        >
+          <div>
+            Heading6
+          </div>
+          <input
+            className="form-control"
+            defaultValue=""
+            id="heading6"
+            name="heading6"
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-group"
+          key="10"
+        >
+          <div>
+            Body
+            <span
+              className="red"
+              title="Required"
+            >
+               *
+            </span>
+          </div>
+          <textarea
+            className="form-control"
+            id="body"
+            name="body"
+            onChange={[Function]}
+            required={true}
+            rows="10"
+            value=""
+          />
+        </div>
+        <div
+          className="form-group"
+          key="11"
+        >
+          <div>
+            Date-In
+          </div>
+          <input
+            className="form-control"
+            defaultValue=""
+            id="dateIn"
+            name="dateIn"
+            onChange={[Function]}
+            type="date"
+          />
+        </div>
+        <div
+          className="form-group"
+          key="12"
+        >
+          <div>
+            Date-Out
+          </div>
+          <input
+            className="form-control"
+            defaultValue=""
+            id="dateOut"
+            name="dateOut"
+            onChange={[Function]}
+            type="date"
+          />
+        </div>
+        <div
+          className="form-group"
+          key="13"
+        >
+          <div>
+            Files
+          </div>
+          <div>
+            <div
+              className="groupedValues"
+            />
+          </div>
+          <button
+            className="btn btn-sm m-2 btn-outline-primary"
+            id="addRowBt"
+            onClick={[Function]}
+            type="button"
+          >
+            Add Another
+          </button>
+        </div>
+        <div
+          className="form-group"
+          key="14"
+        >
+          <div>
+            Youtube Videos
+          </div>
+          <div>
+            <div
+              className="groupedValues"
+            />
+          </div>
+          <button
+            className="btn btn-sm m-2 btn-outline-primary"
+            id="addRowBt"
+            onClick={[Function]}
+            type="button"
+          >
+            Add Another
+          </button>
+        </div>
+        <div
+          className="mb-2"
+        >
+          <span
+            className="red"
+            title="Required"
+          >
+             * 
+          </span>
+          <span>
+            Required Fields
+          </span>
+        </div>
+        <button
+          className="btn btn-primary mr-3"
+          type="submit"
+        >
+          Save
+        </button>
+        <button
+          className="btn btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          Save & Create Another
+        </button>
+      </form>
+    </div>
+  </InputForm>
+</CreateWebsiteSection>
+`;

@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel should render correctly 1`] = `
+<Carousel
+  captions={Array []}
+  id="sample-id"
+  imageUrls={
+    Array [
+      "https://iviidev.info/downloads/images/sample.jpg",
+    ]
+  }
+>
+  <div
+    className="carousel slide"
+    data-ride="carousel"
+    id="imageCarousel-sample-id"
+  >
+    <ol
+      className="carousel-indicators"
+    >
+      <li
+        className="active"
+        data-slide-to="0"
+        data-target="#imageCarousel-sample-id"
+        key="https://iviidev.info/downloads/images/sample.jpg"
+      />
+    </ol>
+    <div
+      className="carousel-inner"
+    >
+      <div
+        className="carousel-item active"
+        key="https://iviidev.info/downloads/images/sample.jpg"
+      >
+        <img
+          alt="poster"
+          className="d-block h-100"
+          src="https://iviidev.info/downloads/images/sample.jpg"
+        />
+      </div>
+    </div>
+    <a
+      className="carousel-control-prev nextPrevIcon"
+      data-slide="prev"
+      href="#imageCarousel-sample-id"
+      role="button"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className="large"
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              448,
+              512,
+              Array [],
+              "f30a",
+              "M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z",
+            ],
+            "iconName": "long-arrow-alt-left",
+            "prefix": "fas",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        title=""
+        transform={null}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-long-arrow-alt-left fa-w-14 large"
+          data-icon="long-arrow-alt-left"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </FontAwesomeIcon>
+      <span
+        className="sr-only"
+      >
+        Previous
+      </span>
+    </a>
+    <a
+      className="carousel-control-next nextPrevIcon"
+      data-slide="next"
+      href="#imageCarousel-sample-id"
+      role="button"
+    >
+      <FontAwesomeIcon
+        border={false}
+        className="large"
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              448,
+              512,
+              Array [],
+              "f30b",
+              "M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z",
+            ],
+            "iconName": "long-arrow-alt-right",
+            "prefix": "fas",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        symbol={false}
+        title=""
+        transform={null}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-long-arrow-alt-right fa-w-14 large"
+          data-icon="long-arrow-alt-right"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </FontAwesomeIcon>
+      <span
+        className="sr-only"
+      >
+        Next
+      </span>
+    </a>
+  </div>
+</Carousel>
+`;

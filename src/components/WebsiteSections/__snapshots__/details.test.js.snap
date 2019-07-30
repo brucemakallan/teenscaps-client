@@ -1,0 +1,888 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Website Section Details should render correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Connect(Details)
+        history={
+          Object {
+            "goBack": [MockFunction],
+          }
+        }
+        match={
+          Object {
+            "params": Object {
+              "id": "5c9fdcf69c5e1a0d891d506e",
+            },
+          }
+        }
+        sections={
+          Array [
+            Object {
+              "__v": 0,
+              "_id": "5c9fdcf69c5e1a0d891d506e",
+              "array": Array [],
+              "body": "test",
+              "category": "test",
+              "dateCreated": "1553980662739",
+              "dateIn": "124231221",
+              "dateOut": "124231222",
+              "files": Array [
+                Object {
+                  "title": "sample file",
+                  "url": "https://iviidev.info/downloads/files/sample.pdf",
+                },
+              ],
+              "heading1": "test1",
+              "heading2": "test2",
+              "heading3": "test3",
+              "heading4": "test4",
+              "heading5": "test5",
+              "heading6": "test6",
+              "images": Array [
+                "https://iviidev.info/downloads/images/sample.jpg",
+              ],
+              "parent": "312313432223",
+            },
+          ]
+        }
+      >
+        <Details
+          dispatch={[Function]}
+          history={
+            Object {
+              "goBack": [MockFunction],
+            }
+          }
+          match={
+            Object {
+              "params": Object {
+                "id": "5c9fdcf69c5e1a0d891d506e",
+              },
+            }
+          }
+          sections={
+            Array [
+              Object {
+                "__v": 0,
+                "_id": "5c9fdcf69c5e1a0d891d506e",
+                "array": Array [],
+                "body": "test",
+                "category": "test",
+                "dateCreated": "1553980662739",
+                "dateIn": "124231221",
+                "dateOut": "124231222",
+                "files": Array [
+                  Object {
+                    "title": "sample file",
+                    "url": "https://iviidev.info/downloads/files/sample.pdf",
+                  },
+                ],
+                "heading1": "test1",
+                "heading2": "test2",
+                "heading3": "test3",
+                "heading4": "test4",
+                "heading5": "test5",
+                "heading6": "test6",
+                "images": Array [
+                  "https://iviidev.info/downloads/images/sample.jpg",
+                ],
+                "parent": "312313432223",
+              },
+            ]
+          }
+        >
+          <div
+            className="flex-container page-header mb-3 mr-3"
+          >
+            <button
+              className="iconButton"
+              onClick={[Function]}
+              type="button"
+            >
+              <FontAwesomeIcon
+                border={false}
+                className="icon"
+                fixedWidth={false}
+                flip={null}
+                icon="arrow-left"
+                inverse={false}
+                listItem={false}
+                mask={null}
+                pull={null}
+                pulse={false}
+                rotation={null}
+                size={null}
+                spin={false}
+                symbol={false}
+                title=""
+                transform={null}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-arrow-left fa-w-14 icon"
+                  data-icon="arrow-left"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  style={Object {}}
+                  viewBox="0 0 448 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </FontAwesomeIcon>
+            </button>
+            <h1>
+              test1
+            </h1>
+            <Link
+              className="btn btn-primary btn-sm button-link"
+              to="/dashboard/sections/edit/5c9fdcf69c5e1a0d891d506e"
+            >
+              <a
+                className="btn btn-primary btn-sm button-link"
+                href="/dashboard/sections/edit/5c9fdcf69c5e1a0d891d506e"
+                onClick={[Function]}
+              >
+                Edit
+              </a>
+            </Link>
+          </div>
+          <div
+            className="mainDetails"
+          >
+            <div
+              className="images"
+            >
+              <Carousel
+                captions={Array []}
+                id="5c9fdcf69c5e1a0d891d506e"
+                imageUrls={
+                  Array [
+                    "https://iviidev.info/downloads/images/sample.jpg",
+                  ]
+                }
+              >
+                <div
+                  className="carousel slide"
+                  data-ride="carousel"
+                  id="imageCarousel-5c9fdcf69c5e1a0d891d506e"
+                >
+                  <ol
+                    className="carousel-indicators"
+                  >
+                    <li
+                      className="active"
+                      data-slide-to="0"
+                      data-target="#imageCarousel-5c9fdcf69c5e1a0d891d506e"
+                      key="https://iviidev.info/downloads/images/sample.jpg"
+                    />
+                  </ol>
+                  <div
+                    className="carousel-inner"
+                  >
+                    <div
+                      className="carousel-item active"
+                      key="https://iviidev.info/downloads/images/sample.jpg"
+                    >
+                      <img
+                        alt="poster"
+                        className="d-block h-100"
+                        src="https://iviidev.info/downloads/images/sample.jpg"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    className="carousel-control-prev nextPrevIcon"
+                    data-slide="prev"
+                    href="#imageCarousel-5c9fdcf69c5e1a0d891d506e"
+                    role="button"
+                  >
+                    <FontAwesomeIcon
+                      border={false}
+                      className="large"
+                      fixedWidth={false}
+                      flip={null}
+                      icon={
+                        Object {
+                          "icon": Array [
+                            448,
+                            512,
+                            Array [],
+                            "f30a",
+                            "M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z",
+                          ],
+                          "iconName": "long-arrow-alt-left",
+                          "prefix": "fas",
+                        }
+                      }
+                      inverse={false}
+                      listItem={false}
+                      mask={null}
+                      pull={null}
+                      pulse={false}
+                      rotation={null}
+                      size={null}
+                      spin={false}
+                      symbol={false}
+                      title=""
+                      transform={null}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-long-arrow-alt-left fa-w-14 large"
+                        data-icon="long-arrow-alt-left"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </FontAwesomeIcon>
+                    <span
+                      className="sr-only"
+                    >
+                      Previous
+                    </span>
+                  </a>
+                  <a
+                    className="carousel-control-next nextPrevIcon"
+                    data-slide="next"
+                    href="#imageCarousel-5c9fdcf69c5e1a0d891d506e"
+                    role="button"
+                  >
+                    <FontAwesomeIcon
+                      border={false}
+                      className="large"
+                      fixedWidth={false}
+                      flip={null}
+                      icon={
+                        Object {
+                          "icon": Array [
+                            448,
+                            512,
+                            Array [],
+                            "f30b",
+                            "M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z",
+                          ],
+                          "iconName": "long-arrow-alt-right",
+                          "prefix": "fas",
+                        }
+                      }
+                      inverse={false}
+                      listItem={false}
+                      mask={null}
+                      pull={null}
+                      pulse={false}
+                      rotation={null}
+                      size={null}
+                      spin={false}
+                      symbol={false}
+                      title=""
+                      transform={null}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="svg-inline--fa fa-long-arrow-alt-right fa-w-14 large"
+                        data-icon="long-arrow-alt-right"
+                        data-prefix="fas"
+                        focusable="false"
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </FontAwesomeIcon>
+                    <span
+                      className="sr-only"
+                    >
+                      Next
+                    </span>
+                  </a>
+                </div>
+              </Carousel>
+            </div>
+            <div
+              className="details "
+            >
+              <div
+                className="material-card"
+              >
+                <div
+                  className="website-section-property"
+                  key="ID"
+                >
+                  <div
+                    className="headingLabel"
+                  >
+                    ID
+                  </div>
+                  <ReactMarkdown
+                    astPlugins={Array []}
+                    escapeHtml={true}
+                    parserOptions={Object {}}
+                    plugins={Array []}
+                    rawSourcePos={false}
+                    renderers={Object {}}
+                    skipHtml={false}
+                    source="5c9fdcf69c5e1a0d891d506e"
+                    sourcePos={false}
+                    transformLinkUri={[Function]}
+                  >
+                    <Root
+                      key="root-1-1"
+                    >
+                      <p
+                        key="paragraph-1-1"
+                      >
+                        <TextRenderer
+                          key="text-1-1"
+                          nodeKey="text-1-1"
+                          value="5c9fdcf69c5e1a0d891d506e"
+                        >
+                          5c9fdcf69c5e1a0d891d506e
+                        </TextRenderer>
+                      </p>
+                    </Root>
+                  </ReactMarkdown>
+                </div>
+                <div
+                  className="website-section-property"
+                  key="Parent"
+                >
+                  <div
+                    className="headingLabel"
+                  >
+                    Parent
+                  </div>
+                  <ReactMarkdown
+                    astPlugins={Array []}
+                    escapeHtml={true}
+                    parserOptions={Object {}}
+                    plugins={Array []}
+                    rawSourcePos={false}
+                    renderers={Object {}}
+                    skipHtml={false}
+                    source="312313432223"
+                    sourcePos={false}
+                    transformLinkUri={[Function]}
+                  >
+                    <Root
+                      key="root-1-1"
+                    >
+                      <p
+                        key="paragraph-1-1"
+                      >
+                        <TextRenderer
+                          key="text-1-1"
+                          nodeKey="text-1-1"
+                          value="312313432223"
+                        >
+                          312313432223
+                        </TextRenderer>
+                      </p>
+                    </Root>
+                  </ReactMarkdown>
+                </div>
+                <div
+                  className="website-section-property"
+                  key="Category"
+                >
+                  <div
+                    className="headingLabel"
+                  >
+                    Category
+                  </div>
+                  <ReactMarkdown
+                    astPlugins={Array []}
+                    escapeHtml={true}
+                    parserOptions={Object {}}
+                    plugins={Array []}
+                    rawSourcePos={false}
+                    renderers={Object {}}
+                    skipHtml={false}
+                    source="TEST"
+                    sourcePos={false}
+                    transformLinkUri={[Function]}
+                  >
+                    <Root
+                      key="root-1-1"
+                    >
+                      <p
+                        key="paragraph-1-1"
+                      >
+                        <TextRenderer
+                          key="text-1-1"
+                          nodeKey="text-1-1"
+                          value="TEST"
+                        >
+                          TEST
+                        </TextRenderer>
+                      </p>
+                    </Root>
+                  </ReactMarkdown>
+                </div>
+                <div
+                  className="website-section-property"
+                  key="Date Created"
+                >
+                  <div
+                    className="headingLabel"
+                  >
+                    Date Created
+                  </div>
+                  <span>
+                    Sun 31 Mar 2019 00:17:42 +0300
+                  </span>
+                </div>
+                <div
+                  className="website-section-property"
+                  key="Date-In"
+                >
+                  <div
+                    className="headingLabel"
+                  >
+                    Date-In
+                  </div>
+                  <span>
+                    Fri 02 Jan 1970 13:30:31 +0300
+                  </span>
+                </div>
+                <div
+                  className="website-section-property"
+                  key="Date-Out"
+                >
+                  <div
+                    className="headingLabel"
+                  >
+                    Date-Out
+                  </div>
+                  <span>
+                    Fri 02 Jan 1970 13:30:31 +0300
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="otherDetails"
+          >
+            <div
+              className="material-card mb-3"
+            >
+              <div
+                className="card-heading"
+              >
+                MORE DETAILS
+              </div>
+              <div
+                className="website-section-property"
+                key="Heading1"
+              >
+                <div
+                  className="headingLabel"
+                >
+                  Heading1
+                </div>
+                <ReactMarkdown
+                  astPlugins={Array []}
+                  escapeHtml={true}
+                  parserOptions={Object {}}
+                  plugins={Array []}
+                  rawSourcePos={false}
+                  renderers={Object {}}
+                  skipHtml={false}
+                  source="test1"
+                  sourcePos={false}
+                  transformLinkUri={[Function]}
+                >
+                  <Root
+                    key="root-1-1"
+                  >
+                    <p
+                      key="paragraph-1-1"
+                    >
+                      <TextRenderer
+                        key="text-1-1"
+                        nodeKey="text-1-1"
+                        value="test1"
+                      >
+                        test1
+                      </TextRenderer>
+                    </p>
+                  </Root>
+                </ReactMarkdown>
+              </div>
+              <div
+                className="website-section-property"
+                key="Heading2"
+              >
+                <div
+                  className="headingLabel"
+                >
+                  Heading2
+                </div>
+                <ReactMarkdown
+                  astPlugins={Array []}
+                  escapeHtml={true}
+                  parserOptions={Object {}}
+                  plugins={Array []}
+                  rawSourcePos={false}
+                  renderers={Object {}}
+                  skipHtml={false}
+                  source="test2"
+                  sourcePos={false}
+                  transformLinkUri={[Function]}
+                >
+                  <Root
+                    key="root-1-1"
+                  >
+                    <p
+                      key="paragraph-1-1"
+                    >
+                      <TextRenderer
+                        key="text-1-1"
+                        nodeKey="text-1-1"
+                        value="test2"
+                      >
+                        test2
+                      </TextRenderer>
+                    </p>
+                  </Root>
+                </ReactMarkdown>
+              </div>
+              <div
+                className="website-section-property"
+                key="Heading3"
+              >
+                <div
+                  className="headingLabel"
+                >
+                  Heading3
+                </div>
+                <ReactMarkdown
+                  astPlugins={Array []}
+                  escapeHtml={true}
+                  parserOptions={Object {}}
+                  plugins={Array []}
+                  rawSourcePos={false}
+                  renderers={Object {}}
+                  skipHtml={false}
+                  source="test3"
+                  sourcePos={false}
+                  transformLinkUri={[Function]}
+                >
+                  <Root
+                    key="root-1-1"
+                  >
+                    <p
+                      key="paragraph-1-1"
+                    >
+                      <TextRenderer
+                        key="text-1-1"
+                        nodeKey="text-1-1"
+                        value="test3"
+                      >
+                        test3
+                      </TextRenderer>
+                    </p>
+                  </Root>
+                </ReactMarkdown>
+              </div>
+              <div
+                className="website-section-property"
+                key="Heading4"
+              >
+                <div
+                  className="headingLabel"
+                >
+                  Heading4
+                </div>
+                <ReactMarkdown
+                  astPlugins={Array []}
+                  escapeHtml={true}
+                  parserOptions={Object {}}
+                  plugins={Array []}
+                  rawSourcePos={false}
+                  renderers={Object {}}
+                  skipHtml={false}
+                  source="test4"
+                  sourcePos={false}
+                  transformLinkUri={[Function]}
+                >
+                  <Root
+                    key="root-1-1"
+                  >
+                    <p
+                      key="paragraph-1-1"
+                    >
+                      <TextRenderer
+                        key="text-1-1"
+                        nodeKey="text-1-1"
+                        value="test4"
+                      >
+                        test4
+                      </TextRenderer>
+                    </p>
+                  </Root>
+                </ReactMarkdown>
+              </div>
+              <div
+                className="website-section-property"
+                key="Heading5"
+              >
+                <div
+                  className="headingLabel"
+                >
+                  Heading5
+                </div>
+                <ReactMarkdown
+                  astPlugins={Array []}
+                  escapeHtml={true}
+                  parserOptions={Object {}}
+                  plugins={Array []}
+                  rawSourcePos={false}
+                  renderers={Object {}}
+                  skipHtml={false}
+                  source="test5"
+                  sourcePos={false}
+                  transformLinkUri={[Function]}
+                >
+                  <Root
+                    key="root-1-1"
+                  >
+                    <p
+                      key="paragraph-1-1"
+                    >
+                      <TextRenderer
+                        key="text-1-1"
+                        nodeKey="text-1-1"
+                        value="test5"
+                      >
+                        test5
+                      </TextRenderer>
+                    </p>
+                  </Root>
+                </ReactMarkdown>
+              </div>
+              <div
+                className="website-section-property"
+                key="Heading6"
+              >
+                <div
+                  className="headingLabel"
+                >
+                  Heading6
+                </div>
+                <ReactMarkdown
+                  astPlugins={Array []}
+                  escapeHtml={true}
+                  parserOptions={Object {}}
+                  plugins={Array []}
+                  rawSourcePos={false}
+                  renderers={Object {}}
+                  skipHtml={false}
+                  source="test6"
+                  sourcePos={false}
+                  transformLinkUri={[Function]}
+                >
+                  <Root
+                    key="root-1-1"
+                  >
+                    <p
+                      key="paragraph-1-1"
+                    >
+                      <TextRenderer
+                        key="text-1-1"
+                        nodeKey="text-1-1"
+                        value="test6"
+                      >
+                        test6
+                      </TextRenderer>
+                    </p>
+                  </Root>
+                </ReactMarkdown>
+              </div>
+              <div
+                className="website-section-property"
+                key="Body"
+              >
+                <div
+                  className="headingLabel"
+                >
+                  Body
+                </div>
+                <ReactMarkdown
+                  astPlugins={Array []}
+                  escapeHtml={true}
+                  parserOptions={Object {}}
+                  plugins={Array []}
+                  rawSourcePos={false}
+                  renderers={Object {}}
+                  skipHtml={false}
+                  source="test"
+                  sourcePos={false}
+                  transformLinkUri={[Function]}
+                >
+                  <Root
+                    key="root-1-1"
+                  >
+                    <p
+                      key="paragraph-1-1"
+                    >
+                      <TextRenderer
+                        key="text-1-1"
+                        nodeKey="text-1-1"
+                        value="test"
+                      >
+                        test
+                      </TextRenderer>
+                    </p>
+                  </Root>
+                </ReactMarkdown>
+              </div>
+              <div
+                className="website-section-property"
+                key="Files"
+              >
+                <div
+                  className="headingLabel"
+                >
+                  Files
+                </div>
+                <ul
+                  className="noBulletList"
+                  key="0"
+                >
+                  <li
+                    key="title"
+                  >
+                    TITLE: sample file
+                  </li>
+                  <li
+                    key="url"
+                  >
+                    <FontAwesomeIcon
+                      border={false}
+                      className="file-icon"
+                      fixedWidth={false}
+                      flip={null}
+                      icon={
+                        Object {
+                          "icon": Array [
+                            384,
+                            512,
+                            Array [],
+                            "f1c1",
+                            "M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z",
+                          ],
+                          "iconName": "file-pdf",
+                          "prefix": "fas",
+                        }
+                      }
+                      inverse={false}
+                      listItem={false}
+                      mask={null}
+                      pull={null}
+                      pulse={false}
+                      rotation={null}
+                      size={null}
+                      spin={false}
+                      symbol={false}
+                      title="file"
+                      transform={null}
+                    >
+                      <svg
+                        aria-labelledby="svg-inline--fa-title-gNnLFQuEpzVA"
+                        className="svg-inline--fa fa-file-pdf fa-w-12 file-icon"
+                        data-icon="file-pdf"
+                        data-prefix="fas"
+                        role="img"
+                        style={Object {}}
+                        viewBox="0 0 384 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title
+                          id="svg-inline--fa-title-gNnLFQuEpzVA"
+                          style={Object {}}
+                        >
+                          file
+                        </title>
+                        <path
+                          d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"
+                          fill="currentColor"
+                          style={Object {}}
+                        />
+                      </svg>
+                    </FontAwesomeIcon>
+                    <a
+                      href="https://iviidev.info/downloads/files/sample.pdf"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      title="https://iviidev.info/downloads/files/sample.pdf"
+                    >
+                      File 1
+                    </a>
+                  </li>
+                  <hr />
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Details>
+      </Connect(Details)>
+    </Router>
+  </BrowserRouter>
+</Provider>
+`;

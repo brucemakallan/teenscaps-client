@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Admin should render correctly 1`] = `
+<Admin
+  history={
+    Object {
+      "push": [MockFunction],
+    }
+  }
+  loginAction={[MockFunction]}
+>
+  <Login
+    email={null}
+    logout={[Function]}
+    onChange={[Function]}
+    onSubmit={[Function]}
+  >
+    <div>
+      <div
+        className="flex-container page-header mb-3"
+      >
+        <h1>
+          Admin Login
+        </h1>
+      </div>
+      <div
+        className="login-container"
+      >
+        <form
+          className="inputForm"
+          id="adminLoginForm"
+          onSubmit={[Function]}
+        >
+          <div
+            className="form-group"
+          >
+            <input
+              autoComplete="username"
+              className="form-control"
+              id="email"
+              name="email"
+              onChange={[Function]}
+              placeholder="email"
+              required={true}
+              type="text"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <input
+              autoComplete="current-password"
+              className="form-control"
+              id="password"
+              name="password"
+              onChange={[Function]}
+              placeholder="password"
+              required={true}
+              type="password"
+            />
+          </div>
+          <button
+            className="btn btn-primary"
+            type="submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </Login>
+</Admin>
+`;

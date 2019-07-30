@@ -1,0 +1,684 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputForm should render correctly 1`] = `
+<InputForm
+  addCloudinaryImage={[MockFunction]}
+  addCloudinaryRawFile={[MockFunction]}
+  addRow={[MockFunction]}
+  allEntities={
+    Array [
+      Object {
+        "__v": 0,
+        "_id": "5c9fdcf69c5e1a0d891d506e",
+        "array": Array [],
+        "body": "test",
+        "category": "test",
+        "dateCreated": "1553980662739",
+        "dateIn": "124231221",
+        "dateOut": "124231222",
+        "files": Array [
+          Object {
+            "title": "sample file",
+            "url": "https://iviidev.info/downloads/files/sample.pdf",
+          },
+        ],
+        "heading1": "test1",
+        "heading2": "test2",
+        "heading3": "test3",
+        "heading4": "test4",
+        "heading5": "test5",
+        "heading6": "test6",
+        "images": Array [
+          "https://iviidev.info/downloads/images/sample.jpg",
+        ],
+        "parent": "312313432223",
+      },
+    ]
+  }
+  entity={
+    Object {
+      "__v": 0,
+      "_id": "5c9fdcf69c5e1a0d891d506e",
+      "array": Array [],
+      "body": "test",
+      "category": "test",
+      "dateCreated": "1553980662739",
+      "dateIn": "124231221",
+      "dateOut": "124231222",
+      "files": Array [
+        Object {
+          "title": "sample file",
+          "url": "https://iviidev.info/downloads/files/sample.pdf",
+        },
+      ],
+      "heading1": "test1",
+      "heading2": "test2",
+      "heading3": "test3",
+      "heading4": "test4",
+      "heading5": "test5",
+      "heading6": "test6",
+      "images": Array [
+        "https://iviidev.info/downloads/images/sample.jpg",
+      ],
+      "parent": "312313432223",
+    }
+  }
+  isNew={false}
+  onArrayChange={[MockFunction]}
+  onChange={[MockFunction]}
+  onSubmit={[MockFunction]}
+  onTagAdd={[MockFunction]}
+  onTagDelete={[MockFunction]}
+  onTagDrag={[MockFunction]}
+  removeRow={[MockFunction]}
+  tagSuggestions={Array []}
+  title="Create new"
+>
+  <div>
+    <h1>
+      Create new
+    </h1>
+    <form
+      className="inputForm"
+      id="customInputForm"
+      onSubmit={[MockFunction]}
+    >
+      <div
+        className="form-group"
+        key="0"
+      >
+        <div>
+          Images
+          <span
+            className="red"
+            title="Required"
+          >
+             *
+          </span>
+        </div>
+        <div>
+          <div
+            className="website-section-images responsive-flex"
+          >
+            <div
+              className="text-center"
+              key="0"
+            >
+              <div
+                className="imageHolder"
+              >
+                <img
+                  alt="poster"
+                  src="https://iviidev.info/downloads/images/sample.jpg"
+                />
+              </div>
+              <button
+                className="iconBorderedButton red"
+                id="removeRowBt"
+                onClick={[Function]}
+                title="Remove"
+                type="button"
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className="icon red"
+                  fixedWidth={false}
+                  flip={null}
+                  icon="trash"
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-trash fa-w-14 icon red"
+                    data-icon="trash"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 448 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </FontAwesomeIcon>
+                <small>
+                  Delete Image
+                </small>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          className="btn btn-sm m-2 btn-outline-primary"
+          id="addRowBt"
+          onClick={[Function]}
+          type="button"
+        >
+          Upload Image
+        </button>
+      </div>
+      <div
+        className="form-group"
+        key="1"
+      >
+        <div>
+          Tags
+        </div>
+        <div
+          className="tags"
+        >
+          <DragDropContext(ReactTags)
+            delimiters={
+              Array [
+                188,
+                13,
+              ]
+            }
+            handleAddition={[MockFunction]}
+            handleDelete={[MockFunction]}
+            handleDrag={[MockFunction]}
+            suggestions={Array []}
+          >
+            <ReactTags
+              allowAdditionFromPaste={true}
+              allowDeleteFromEmptyInput={true}
+              allowDragDrop={true}
+              allowUnique={true}
+              autocomplete={false}
+              autofocus={true}
+              delimiters={
+                Array [
+                  188,
+                  13,
+                ]
+              }
+              handleAddition={[MockFunction]}
+              handleDelete={[MockFunction]}
+              handleDrag={[MockFunction]}
+              inline={true}
+              inputFieldPosition="inline"
+              labelField="text"
+              placeholder="Add new tag"
+              readOnly={false}
+              resetInputOnDelete={true}
+              suggestions={Array []}
+              tags={Array []}
+            >
+              <div
+                className="ReactTags__tags react-tags-wrapper"
+              >
+                <div
+                  className="ReactTags__selected"
+                >
+                  <div
+                    className="ReactTags__tagInput"
+                  >
+                    <input
+                      aria-label="Add new tag"
+                      className="ReactTags__tagInputField"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                      onPaste={[Function]}
+                      placeholder="Add new tag"
+                      type="text"
+                    />
+                    <Suggestions
+                      classNames={
+                        Object {
+                          "activeSuggestion": "ReactTags__activeSuggestion",
+                          "remove": "ReactTags__remove",
+                          "selected": "ReactTags__selected",
+                          "suggestions": "ReactTags__suggestions",
+                          "tag": "ReactTags__tag",
+                          "tagInput": "ReactTags__tagInput",
+                          "tagInputField": "ReactTags__tagInputField",
+                          "tags": "ReactTags__tags",
+                        }
+                      }
+                      handleClick={[Function]}
+                      handleHover={[Function]}
+                      isFocused={false}
+                      labelField="text"
+                      minQueryLength={2}
+                      query=""
+                      selectedIndex={-1}
+                      suggestions={Array []}
+                    />
+                  </div>
+                </div>
+              </div>
+            </ReactTags>
+          </DragDropContext(ReactTags)>
+        </div>
+      </div>
+      <div
+        className="form-group"
+        key="2"
+      >
+        <div>
+          Parent
+        </div>
+        <select
+          className="form-control"
+          id="parent"
+          name="parent"
+          onChange={[MockFunction]}
+          value="312313432223"
+        >
+          <option
+            value=""
+          >
+            N/A
+          </option>
+          <option
+            key="0"
+            value="5c9fdcf69c5e1a0d891d506e"
+          >
+            TEST: 5c9fdcf69c5e1a0d891d506e test1
+          </option>
+        </select>
+      </div>
+      <div
+        className="form-group"
+        key="3"
+      >
+        <div>
+          Category
+          <span
+            className="red"
+            title="Required"
+          >
+             *
+          </span>
+        </div>
+        <select
+          className="form-control"
+          id="category"
+          name="category"
+          onChange={[MockFunction]}
+          required={true}
+          value="test"
+        >
+          <option
+            key="0"
+            value="ARTICLE"
+          >
+            ARTICLE
+          </option>
+          <option
+            key="1"
+            value="ABOUT"
+          >
+            ABOUT
+          </option>
+          <option
+            key="2"
+            value="CAROUSEL"
+          >
+            CAROUSEL
+          </option>
+          <option
+            key="3"
+            value="SERVICE"
+          >
+            SERVICE
+          </option>
+          <option
+            key="4"
+            value="CONTACT"
+          >
+            CONTACT
+          </option>
+        </select>
+      </div>
+      <div
+        className="form-group"
+        key="4"
+      >
+        <div>
+          Heading1
+        </div>
+        <input
+          className="form-control"
+          defaultValue="test1"
+          id="heading1"
+          name="heading1"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+        key="5"
+      >
+        <div>
+          Heading2
+        </div>
+        <input
+          className="form-control"
+          defaultValue="test2"
+          id="heading2"
+          name="heading2"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+        key="6"
+      >
+        <div>
+          Heading3
+        </div>
+        <input
+          className="form-control"
+          defaultValue="test3"
+          id="heading3"
+          name="heading3"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+        key="7"
+      >
+        <div>
+          Heading4
+        </div>
+        <input
+          className="form-control"
+          defaultValue="test4"
+          id="heading4"
+          name="heading4"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+        key="8"
+      >
+        <div>
+          Heading5
+        </div>
+        <input
+          className="form-control"
+          defaultValue="test5"
+          id="heading5"
+          name="heading5"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+        key="9"
+      >
+        <div>
+          Heading6
+        </div>
+        <input
+          className="form-control"
+          defaultValue="test6"
+          id="heading6"
+          name="heading6"
+          onChange={[MockFunction]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form-group"
+        key="10"
+      >
+        <div>
+          Body
+          <span
+            className="red"
+            title="Required"
+          >
+             *
+          </span>
+        </div>
+        <textarea
+          className="form-control"
+          id="body"
+          name="body"
+          onChange={[MockFunction]}
+          required={true}
+          rows="10"
+          value="test"
+        />
+      </div>
+      <div
+        className="form-group"
+        key="11"
+      >
+        <div>
+          Date-In
+        </div>
+        <input
+          className="form-control"
+          defaultValue="1970-01-02"
+          id="dateIn"
+          name="dateIn"
+          onChange={[Function]}
+          type="date"
+        />
+      </div>
+      <div
+        className="form-group"
+        key="12"
+      >
+        <div>
+          Date-Out
+        </div>
+        <input
+          className="form-control"
+          defaultValue="1970-01-02"
+          id="dateOut"
+          name="dateOut"
+          onChange={[Function]}
+          type="date"
+        />
+      </div>
+      <div
+        className="form-group"
+        key="13"
+      >
+        <div>
+          Files
+        </div>
+        <div>
+          <div
+            className="groupedValues"
+          >
+            <div
+              className="flex-container single-element"
+              key="0"
+            >
+              <div
+                className="inputFields"
+              >
+                <input
+                  className="form-control files"
+                  name="title"
+                  onChange={[Function]}
+                  placeholder="Title"
+                  type="text"
+                  value="sample file"
+                />
+                <input
+                  className="form-control files"
+                  name="description"
+                  onChange={[Function]}
+                  placeholder="Description"
+                  type="text"
+                  value=""
+                />
+                <input
+                  className="form-control files"
+                  name="source"
+                  onChange={[Function]}
+                  placeholder="Source"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+                <button
+                  className="iconBorderedButton m-2"
+                  id="addRowBt"
+                  onClick={[Function]}
+                  title="Upload file"
+                  type="button"
+                >
+                  <FontAwesomeIcon
+                    border={false}
+                    className="icon green"
+                    fixedWidth={false}
+                    flip={null}
+                    icon="cloud-upload-alt"
+                    inverse={false}
+                    listItem={false}
+                    mask={null}
+                    pull={null}
+                    pulse={false}
+                    rotation={null}
+                    size={null}
+                    spin={false}
+                    symbol={false}
+                    title=""
+                    transform={null}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-cloud-upload-alt fa-w-20 icon green"
+                      data-icon="cloud-upload-alt"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4zM393.4 288H328v112c0 8.8-7.2 16-16 16h-48c-8.8 0-16-7.2-16-16V288h-65.4c-14.3 0-21.4-17.2-11.3-27.3l105.4-105.4c6.2-6.2 16.4-6.2 22.6 0l105.4 105.4c10.1 10.1 2.9 27.3-11.3 27.3z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </FontAwesomeIcon>
+                  Upload File
+                </button>
+              </div>
+              <button
+                className="iconButton"
+                id="removeRowBt"
+                onClick={[Function]}
+                title="Remove"
+                type="button"
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className="icon red"
+                  fixedWidth={false}
+                  flip={null}
+                  icon="trash"
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-trash fa-w-14 icon red"
+                    data-icon="trash"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 448 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </FontAwesomeIcon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          className="btn btn-sm m-2 btn-outline-primary"
+          id="addRowBt"
+          onClick={[Function]}
+          type="button"
+        >
+          Add Another
+        </button>
+      </div>
+      <div
+        className="form-group"
+        key="14"
+      >
+        <div>
+          Youtube Videos
+        </div>
+        <button
+          className="btn btn-sm m-2 btn-outline-primary"
+          id="addRowBt"
+          onClick={[Function]}
+          type="button"
+        >
+          Add Another
+        </button>
+      </div>
+      <div
+        className="mb-2"
+      >
+        <span
+          className="red"
+          title="Required"
+        >
+           * 
+        </span>
+        <span>
+          Required Fields
+        </span>
+      </div>
+      <button
+        className="btn btn-primary mr-3"
+        type="submit"
+      >
+        Save
+      </button>
+    </form>
+  </div>
+</InputForm>
+`;

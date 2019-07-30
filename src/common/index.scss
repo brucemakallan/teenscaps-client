@@ -1,0 +1,131 @@
+@import './fonts.scss';
+@import './colors.scss';
+@import './mixins.scss';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: $Nunito;
+  font-weight: 300;
+}
+.icon {
+  margin: 0 10px;
+}
+.iconButton {
+  @include no-outline;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.file-icon {
+  margin-right: 5px;
+  font-size: 22px;
+  color: $primary800;
+}
+.iconBorderedButton {
+  background: transparent;
+  border-radius: 5px;
+  margin: 5px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.responsive-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+
+  .full {
+    width: 100%;
+  }
+  .half {
+    width: 50%;
+  }
+  .third {
+    width: 33.33%;
+  }
+  .two-thirds {
+    width: 66.66%;
+  }
+  .quarter {
+    width: 25%;
+  }
+  .sixth {
+    width: 16.66%;
+  }
+}
+.bold {
+  font-weight: 900;
+}
+.thin {
+  font-weight: 300;
+}
+.large {
+  font-size: 3em;
+}
+.medium {
+  font-size: 2em;
+}
+.section-padding {
+  padding: 50px 100px;
+}
+.section-heading {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 300;
+  color: $primary;
+  text-align: center;
+  margin-bottom: 40px;
+
+  hr {
+    width: 50px;
+    background-color: $primary;
+  }
+}
+.material-card {
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  -webkit-box-shadow: 6px 7px 20px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: 6px 7px 20px 0px rgba(0,0,0,0.14);
+  box-shadow: 6px 7px 20px 0px rgba(0,0,0,0.14);
+  background-color: white;
+
+  .card-heading {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+}
+.circled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  border: 2px solid $accentColor;
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .responsive-flex {
+    flex-flow: column wrap;
+    
+    img {
+      width: 100%;
+    }
+    .responsive-flex-child {
+      width: 100% !important;
+    }
+  }
+  .section-padding {
+    padding: 20px;
+  }
+}

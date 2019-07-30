@@ -1,0 +1,1072 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard should render correctly with a loader 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Dashboard
+        location={
+          Object {
+            "pathname": "/dashboard/sections",
+          }
+        }
+      >
+        <div
+          className="page-wrapper toggled"
+        >
+          <button
+            className="btn btn-sm btn-dark"
+            id="show-sidebar"
+            onClick={[Function]}
+            type="button"
+          >
+            <FontAwesomeIcon
+              border={false}
+              className=""
+              fixedWidth={false}
+              flip={null}
+              icon={
+                Object {
+                  "icon": Array [
+                    448,
+                    512,
+                    Array [],
+                    "f0c9",
+                    "M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z",
+                  ],
+                  "iconName": "bars",
+                  "prefix": "fas",
+                }
+              }
+              inverse={false}
+              listItem={false}
+              mask={null}
+              pull={null}
+              pulse={false}
+              rotation={null}
+              size={null}
+              spin={false}
+              symbol={false}
+              title=""
+              transform={null}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-bars fa-w-14 "
+                data-icon="bars"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </FontAwesomeIcon>
+          </button>
+          <nav
+            className="sidebar-wrapper"
+            id="sidebar"
+            style={
+              Object {
+                "backgroundImage": "url(./images/prism.png)",
+              }
+            }
+          >
+            <div
+              className="sidebar-content"
+            >
+              <div
+                className="sidebar-brand"
+              >
+                <button
+                  className="iconButton"
+                  id="close-sidebar"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <FontAwesomeIcon
+                    border={false}
+                    className=""
+                    fixedWidth={false}
+                    flip={null}
+                    icon={
+                      Object {
+                        "icon": Array [
+                          352,
+                          512,
+                          Array [],
+                          "f00d",
+                          "M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z",
+                        ],
+                        "iconName": "times",
+                        "prefix": "fas",
+                      }
+                    }
+                    inverse={false}
+                    listItem={false}
+                    mask={null}
+                    pull={null}
+                    pulse={false}
+                    rotation={null}
+                    size={null}
+                    spin={false}
+                    symbol={false}
+                    title=""
+                    transform={null}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-times fa-w-11 "
+                      data-icon="times"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 352 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </FontAwesomeIcon>
+                </button>
+              </div>
+              <div
+                className="sidebar-menu"
+              >
+                <ul>
+                  <li
+                    key="Homepage"
+                  >
+                    <Link
+                      className="sidebar-link "
+                      to="/"
+                    >
+                      <a
+                        className="sidebar-link "
+                        href="/"
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="boxed-icon"
+                        >
+                          <FontAwesomeIcon
+                            border={false}
+                            className=""
+                            fixedWidth={false}
+                            flip={null}
+                            icon={
+                              Object {
+                                "icon": Array [
+                                  576,
+                                  512,
+                                  Array [],
+                                  "f015",
+                                  "M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z",
+                                ],
+                                "iconName": "home",
+                                "prefix": "fas",
+                              }
+                            }
+                            inverse={false}
+                            listItem={false}
+                            mask={null}
+                            pull={null}
+                            pulse={false}
+                            rotation={null}
+                            size={null}
+                            spin={false}
+                            symbol={false}
+                            title=""
+                            transform={null}
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="svg-inline--fa fa-home fa-w-18 "
+                              data-icon="home"
+                              data-prefix="fas"
+                              focusable="false"
+                              role="img"
+                              style={Object {}}
+                              viewBox="0 0 576 512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+                                fill="currentColor"
+                                style={Object {}}
+                              />
+                            </svg>
+                          </FontAwesomeIcon>
+                        </span>
+                        <span
+                          className="link-title"
+                        >
+                          Homepage
+                        </span>
+                      </a>
+                    </Link>
+                  </li>
+                  <li
+                    key="Website Sections"
+                  >
+                    <Link
+                      className="sidebar-link active"
+                      to="/dashboard/sections"
+                    >
+                      <a
+                        className="sidebar-link active"
+                        href="/dashboard/sections"
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="boxed-icon"
+                        >
+                          <FontAwesomeIcon
+                            border={false}
+                            className=""
+                            fixedWidth={false}
+                            flip={null}
+                            icon={
+                              Object {
+                                "icon": Array [
+                                  512,
+                                  512,
+                                  Array [],
+                                  "f00a",
+                                  "M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z",
+                                ],
+                                "iconName": "th",
+                                "prefix": "fas",
+                              }
+                            }
+                            inverse={false}
+                            listItem={false}
+                            mask={null}
+                            pull={null}
+                            pulse={false}
+                            rotation={null}
+                            size={null}
+                            spin={false}
+                            symbol={false}
+                            title=""
+                            transform={null}
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="svg-inline--fa fa-th fa-w-16 "
+                              data-icon="th"
+                              data-prefix="fas"
+                              focusable="false"
+                              role="img"
+                              style={Object {}}
+                              viewBox="0 0 512 512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"
+                                fill="currentColor"
+                                style={Object {}}
+                              />
+                            </svg>
+                          </FontAwesomeIcon>
+                        </span>
+                        <span
+                          className="link-title"
+                        >
+                          Website Sections
+                        </span>
+                      </a>
+                    </Link>
+                  </li>
+                  <li
+                    key="Admin"
+                  >
+                    <Link
+                      className="sidebar-link "
+                      to="/dashboard/admin"
+                    >
+                      <a
+                        className="sidebar-link "
+                        href="/dashboard/admin"
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="boxed-icon"
+                        >
+                          <FontAwesomeIcon
+                            border={false}
+                            className=""
+                            fixedWidth={false}
+                            flip={null}
+                            icon={
+                              Object {
+                                "icon": Array [
+                                  448,
+                                  512,
+                                  Array [],
+                                  "f007",
+                                  "M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z",
+                                ],
+                                "iconName": "user",
+                                "prefix": "fas",
+                              }
+                            }
+                            inverse={false}
+                            listItem={false}
+                            mask={null}
+                            pull={null}
+                            pulse={false}
+                            rotation={null}
+                            size={null}
+                            spin={false}
+                            symbol={false}
+                            title=""
+                            transform={null}
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="svg-inline--fa fa-user fa-w-14 "
+                              data-icon="user"
+                              data-prefix="fas"
+                              focusable="false"
+                              role="img"
+                              style={Object {}}
+                              viewBox="0 0 448 512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                                fill="currentColor"
+                                style={Object {}}
+                              />
+                            </svg>
+                          </FontAwesomeIcon>
+                        </span>
+                        <span
+                          className="link-title"
+                        >
+                          Admin
+                        </span>
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <main
+            className="page-content"
+          >
+            <div
+              className="container-fluid"
+            >
+              <Connect(PageLoader)>
+                <PageLoader
+                  dispatch={[Function]}
+                  showLoader={true}
+                >
+                  <div
+                    className="loader"
+                  >
+                    <Loader
+                      color="#00BFFF"
+                      height="50"
+                      type="Ball-Triangle"
+                      width="50"
+                    >
+                      <div>
+                        <BallTriangle
+                          color="#00BFFF"
+                          height="50"
+                          type="Ball-Triangle"
+                          width="50"
+                        >
+                          <svg
+                            height="50"
+                            stroke="#00BFFF"
+                            viewBox="0 0 57 57"
+                            width="50"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g
+                              fill="none"
+                              fillRule="evenodd"
+                            >
+                              <g
+                                strokeWidth="2"
+                                transform="translate(1 1)"
+                              >
+                                <circle
+                                  cx="5"
+                                  cy="50"
+                                  r="5"
+                                >
+                                  <animate
+                                    attributeName="cy"
+                                    begin="0s"
+                                    calcMode="linear"
+                                    dur="2.2s"
+                                    repeatCount="indefinite"
+                                    values="50;5;50;50"
+                                  />
+                                  <animate
+                                    attributeName="cx"
+                                    begin="0s"
+                                    calcMode="linear"
+                                    dur="2.2s"
+                                    repeatCount="indefinite"
+                                    values="5;27;49;5"
+                                  />
+                                </circle>
+                                <circle
+                                  cx="27"
+                                  cy="5"
+                                  r="5"
+                                >
+                                  <animate
+                                    attributeName="cy"
+                                    begin="0s"
+                                    calcMode="linear"
+                                    dur="2.2s"
+                                    from="5"
+                                    repeatCount="indefinite"
+                                    to="5"
+                                    values="5;50;50;5"
+                                  />
+                                  <animate
+                                    attributeName="cx"
+                                    begin="0s"
+                                    calcMode="linear"
+                                    dur="2.2s"
+                                    from="27"
+                                    repeatCount="indefinite"
+                                    to="27"
+                                    values="27;49;5;27"
+                                  />
+                                </circle>
+                                <circle
+                                  cx="49"
+                                  cy="50"
+                                  r="5"
+                                >
+                                  <animate
+                                    attributeName="cy"
+                                    begin="0s"
+                                    calcMode="linear"
+                                    dur="2.2s"
+                                    repeatCount="indefinite"
+                                    values="50;50;5;50"
+                                  />
+                                  <animate
+                                    attributeName="cx"
+                                    begin="0s"
+                                    calcMode="linear"
+                                    dur="2.2s"
+                                    from="49"
+                                    repeatCount="indefinite"
+                                    to="49"
+                                    values="49;5;27;49"
+                                  />
+                                </circle>
+                              </g>
+                            </g>
+                          </svg>
+                        </BallTriangle>
+                      </div>
+                    </Loader>
+                  </div>
+                </PageLoader>
+              </Connect(PageLoader)>
+              <Route
+                component={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "WrappedComponent": [Function],
+                    "compare": null,
+                    "displayName": "Connect(WebsiteSections)",
+                    "type": [Function],
+                  }
+                }
+                exact={true}
+                path="/dashboard/sections"
+              />
+              <Route
+                component={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "WrappedComponent": [Function],
+                    "compare": null,
+                    "displayName": "Connect(Admin)",
+                    "type": [Function],
+                  }
+                }
+                exact={true}
+                path="/dashboard/admin"
+              />
+              <Route
+                component={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "WrappedComponent": [Function],
+                    "compare": null,
+                    "displayName": "Connect(Details)",
+                    "type": [Function],
+                  }
+                }
+                path="/dashboard/details/:id"
+              />
+              <Route
+                component={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "WrappedComponent": [Function],
+                    "compare": null,
+                    "displayName": "Connect(CreateWebsiteSection)",
+                    "type": [Function],
+                  }
+                }
+                exact={true}
+                path="/dashboard/sections/create"
+              />
+              <Route
+                component={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "WrappedComponent": [Function],
+                    "compare": null,
+                    "displayName": "Connect(EditWebsiteSection)",
+                    "type": [Function],
+                  }
+                }
+                path="/dashboard/sections/edit/:id"
+              />
+            </div>
+          </main>
+        </div>
+      </Dashboard>
+    </Router>
+  </BrowserRouter>
+</Provider>
+`;
+
+exports[`Dashboard should render correctly with no loader 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Dashboard
+        location={
+          Object {
+            "pathname": "/dashboard/sections",
+          }
+        }
+      >
+        <div
+          className="page-wrapper toggled"
+        >
+          <button
+            className="btn btn-sm btn-dark"
+            id="show-sidebar"
+            onClick={[Function]}
+            type="button"
+          >
+            <FontAwesomeIcon
+              border={false}
+              className=""
+              fixedWidth={false}
+              flip={null}
+              icon={
+                Object {
+                  "icon": Array [
+                    448,
+                    512,
+                    Array [],
+                    "f0c9",
+                    "M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z",
+                  ],
+                  "iconName": "bars",
+                  "prefix": "fas",
+                }
+              }
+              inverse={false}
+              listItem={false}
+              mask={null}
+              pull={null}
+              pulse={false}
+              rotation={null}
+              size={null}
+              spin={false}
+              symbol={false}
+              title=""
+              transform={null}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-bars fa-w-14 "
+                data-icon="bars"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </FontAwesomeIcon>
+          </button>
+          <nav
+            className="sidebar-wrapper"
+            id="sidebar"
+            style={
+              Object {
+                "backgroundImage": "url(./images/prism.png)",
+              }
+            }
+          >
+            <div
+              className="sidebar-content"
+            >
+              <div
+                className="sidebar-brand"
+              >
+                <button
+                  className="iconButton"
+                  id="close-sidebar"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <FontAwesomeIcon
+                    border={false}
+                    className=""
+                    fixedWidth={false}
+                    flip={null}
+                    icon={
+                      Object {
+                        "icon": Array [
+                          352,
+                          512,
+                          Array [],
+                          "f00d",
+                          "M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z",
+                        ],
+                        "iconName": "times",
+                        "prefix": "fas",
+                      }
+                    }
+                    inverse={false}
+                    listItem={false}
+                    mask={null}
+                    pull={null}
+                    pulse={false}
+                    rotation={null}
+                    size={null}
+                    spin={false}
+                    symbol={false}
+                    title=""
+                    transform={null}
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="svg-inline--fa fa-times fa-w-11 "
+                      data-icon="times"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style={Object {}}
+                      viewBox="0 0 352 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                        fill="currentColor"
+                        style={Object {}}
+                      />
+                    </svg>
+                  </FontAwesomeIcon>
+                </button>
+              </div>
+              <div
+                className="sidebar-menu"
+              >
+                <ul>
+                  <li
+                    key="Homepage"
+                  >
+                    <Link
+                      className="sidebar-link "
+                      to="/"
+                    >
+                      <a
+                        className="sidebar-link "
+                        href="/"
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="boxed-icon"
+                        >
+                          <FontAwesomeIcon
+                            border={false}
+                            className=""
+                            fixedWidth={false}
+                            flip={null}
+                            icon={
+                              Object {
+                                "icon": Array [
+                                  576,
+                                  512,
+                                  Array [],
+                                  "f015",
+                                  "M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z",
+                                ],
+                                "iconName": "home",
+                                "prefix": "fas",
+                              }
+                            }
+                            inverse={false}
+                            listItem={false}
+                            mask={null}
+                            pull={null}
+                            pulse={false}
+                            rotation={null}
+                            size={null}
+                            spin={false}
+                            symbol={false}
+                            title=""
+                            transform={null}
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="svg-inline--fa fa-home fa-w-18 "
+                              data-icon="home"
+                              data-prefix="fas"
+                              focusable="false"
+                              role="img"
+                              style={Object {}}
+                              viewBox="0 0 576 512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+                                fill="currentColor"
+                                style={Object {}}
+                              />
+                            </svg>
+                          </FontAwesomeIcon>
+                        </span>
+                        <span
+                          className="link-title"
+                        >
+                          Homepage
+                        </span>
+                      </a>
+                    </Link>
+                  </li>
+                  <li
+                    key="Website Sections"
+                  >
+                    <Link
+                      className="sidebar-link active"
+                      to="/dashboard/sections"
+                    >
+                      <a
+                        className="sidebar-link active"
+                        href="/dashboard/sections"
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="boxed-icon"
+                        >
+                          <FontAwesomeIcon
+                            border={false}
+                            className=""
+                            fixedWidth={false}
+                            flip={null}
+                            icon={
+                              Object {
+                                "icon": Array [
+                                  512,
+                                  512,
+                                  Array [],
+                                  "f00a",
+                                  "M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z",
+                                ],
+                                "iconName": "th",
+                                "prefix": "fas",
+                              }
+                            }
+                            inverse={false}
+                            listItem={false}
+                            mask={null}
+                            pull={null}
+                            pulse={false}
+                            rotation={null}
+                            size={null}
+                            spin={false}
+                            symbol={false}
+                            title=""
+                            transform={null}
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="svg-inline--fa fa-th fa-w-16 "
+                              data-icon="th"
+                              data-prefix="fas"
+                              focusable="false"
+                              role="img"
+                              style={Object {}}
+                              viewBox="0 0 512 512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"
+                                fill="currentColor"
+                                style={Object {}}
+                              />
+                            </svg>
+                          </FontAwesomeIcon>
+                        </span>
+                        <span
+                          className="link-title"
+                        >
+                          Website Sections
+                        </span>
+                      </a>
+                    </Link>
+                  </li>
+                  <li
+                    key="Admin"
+                  >
+                    <Link
+                      className="sidebar-link "
+                      to="/dashboard/admin"
+                    >
+                      <a
+                        className="sidebar-link "
+                        href="/dashboard/admin"
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="boxed-icon"
+                        >
+                          <FontAwesomeIcon
+                            border={false}
+                            className=""
+                            fixedWidth={false}
+                            flip={null}
+                            icon={
+                              Object {
+                                "icon": Array [
+                                  448,
+                                  512,
+                                  Array [],
+                                  "f007",
+                                  "M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z",
+                                ],
+                                "iconName": "user",
+                                "prefix": "fas",
+                              }
+                            }
+                            inverse={false}
+                            listItem={false}
+                            mask={null}
+                            pull={null}
+                            pulse={false}
+                            rotation={null}
+                            size={null}
+                            spin={false}
+                            symbol={false}
+                            title=""
+                            transform={null}
+                          >
+                            <svg
+                              aria-hidden="true"
+                              className="svg-inline--fa fa-user fa-w-14 "
+                              data-icon="user"
+                              data-prefix="fas"
+                              focusable="false"
+                              role="img"
+                              style={Object {}}
+                              viewBox="0 0 448 512"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                                fill="currentColor"
+                                style={Object {}}
+                              />
+                            </svg>
+                          </FontAwesomeIcon>
+                        </span>
+                        <span
+                          className="link-title"
+                        >
+                          Admin
+                        </span>
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <main
+            className="page-content"
+          >
+            <div
+              className="container-fluid"
+            >
+              <Connect(PageLoader)>
+                <PageLoader
+                  dispatch={[Function]}
+                  showLoader={false}
+                />
+              </Connect(PageLoader)>
+              <Route
+                component={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "WrappedComponent": [Function],
+                    "compare": null,
+                    "displayName": "Connect(WebsiteSections)",
+                    "type": [Function],
+                  }
+                }
+                exact={true}
+                path="/dashboard/sections"
+              />
+              <Route
+                component={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "WrappedComponent": [Function],
+                    "compare": null,
+                    "displayName": "Connect(Admin)",
+                    "type": [Function],
+                  }
+                }
+                exact={true}
+                path="/dashboard/admin"
+              />
+              <Route
+                component={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "WrappedComponent": [Function],
+                    "compare": null,
+                    "displayName": "Connect(Details)",
+                    "type": [Function],
+                  }
+                }
+                path="/dashboard/details/:id"
+              />
+              <Route
+                component={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "WrappedComponent": [Function],
+                    "compare": null,
+                    "displayName": "Connect(CreateWebsiteSection)",
+                    "type": [Function],
+                  }
+                }
+                exact={true}
+                path="/dashboard/sections/create"
+              />
+              <Route
+                component={
+                  Object {
+                    "$$typeof": Symbol(react.memo),
+                    "WrappedComponent": [Function],
+                    "compare": null,
+                    "displayName": "Connect(EditWebsiteSection)",
+                    "type": [Function],
+                  }
+                }
+                path="/dashboard/sections/edit/:id"
+              />
+            </div>
+          </main>
+        </div>
+      </Dashboard>
+    </Router>
+  </BrowserRouter>
+</Provider>
+`;

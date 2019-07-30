@@ -1,0 +1,49 @@
+@import '../../common/colors.scss';
+@import '../../common/mixins.scss';
+
+.contacts-page {
+  @include gradientBg;
+  min-height: 200px;
+  color: white;
+  margin-top: 50px;
+
+  .contact-boxes {
+    .contact-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 0;
+
+      a {
+        color: white;
+        text-transform: none;
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      .circled {
+        border: 2px solid white;
+      }
+      .contact-body {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contacts-page {
+    margin-top: 20px;
+
+    .contact-boxes {
+      .contact-box {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
