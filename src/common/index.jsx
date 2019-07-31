@@ -46,13 +46,11 @@ export const localFiles = {
 export const article = 'ARTICLE';
 export const about = 'ABOUT';
 export const carousel = 'CAROUSEL';
-export const service = 'SERVICE';
 export const contact = 'CONTACT';
 export const entityTypes = [
   article,
   about,
   carousel,
-  service,
   contact,
 ];
 
@@ -62,5 +60,19 @@ export const removeUnsupportedProperties = (passedEntity, unsupportedProperties)
   return entity;
 };
 
+export const navLinks = [
+  {
+    name: 'Home',
+    to: 'home-anchor',
+  },
+  {
+    name: 'About',
+    to: 'about-anchor',
+  },
+  {
+    name: 'Contacts',
+    to: 'contacts-anchor',
+  },
+];
 
 export default paths;

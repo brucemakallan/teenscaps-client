@@ -307,12 +307,6 @@ exports[`EditWebsiteSection should redirect if required entity is not found 1`] 
             </option>
             <option
               key="3"
-              value="SERVICE"
-            >
-              SERVICE
-            </option>
-            <option
-              key="4"
               value="CONTACT"
             >
               CONTACT
@@ -920,12 +914,6 @@ exports[`EditWebsiteSection should render correctly 1`] = `
             </option>
             <option
               key="3"
-              value="SERVICE"
-            >
-              SERVICE
-            </option>
-            <option
-              key="4"
               value="CONTACT"
             >
               CONTACT

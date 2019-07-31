@@ -300,7 +300,7 @@ exports[`App should render correctly 1`] = `
                                   key="0"
                                 >
                                   <Link
-                                    activeClass="active-nav-link"
+                                    activeClass="bold"
                                     duration={500}
                                     offset={-40}
                                     smooth={true}
@@ -322,7 +322,7 @@ exports[`App should render correctly 1`] = `
                                   key="1"
                                 >
                                   <Link
-                                    activeClass="active-nav-link"
+                                    activeClass="bold"
                                     duration={500}
                                     offset={-40}
                                     smooth={true}
@@ -344,29 +344,7 @@ exports[`App should render correctly 1`] = `
                                   key="2"
                                 >
                                   <Link
-                                    activeClass="active-nav-link"
-                                    duration={500}
-                                    offset={-40}
-                                    smooth={true}
-                                    spy={true}
-                                    to="services-anchor"
-                                  >
-                                    <LinkElement
-                                      onClick={[Function]}
-                                    >
-                                      <a
-                                        onClick={[Function]}
-                                      >
-                                        Services
-                                      </a>
-                                    </LinkElement>
-                                  </Link>
-                                </li>
-                                <li
-                                  key="3"
-                                >
-                                  <Link
-                                    activeClass="active-nav-link"
+                                    activeClass="bold"
                                     duration={500}
                                     offset={-40}
                                     smooth={true}
@@ -420,40 +398,71 @@ exports[`App should render correctly 1`] = `
                         className="links-section responsive-flex-child half"
                       >
                         <ul>
-                          <li>
-                            <a
-                              href="/"
+                          <li
+                            key="0"
+                          >
+                            <Link
+                              activeClass="bold"
+                              duration={500}
+                              offset={-40}
+                              smooth={true}
+                              spy={true}
+                              to="home-anchor"
                             >
-                              Home
-                            </a>
+                              <LinkElement
+                                onClick={[Function]}
+                              >
+                                <a
+                                  onClick={[Function]}
+                                >
+                                  Home
+                                </a>
+                              </LinkElement>
+                            </Link>
                           </li>
-                          <li>
-                            <a
-                              href="/"
+                          <li
+                            key="1"
+                          >
+                            <Link
+                              activeClass="bold"
+                              duration={500}
+                              offset={-40}
+                              smooth={true}
+                              spy={true}
+                              to="about-anchor"
                             >
-                              Our Business
-                            </a>
+                              <LinkElement
+                                onClick={[Function]}
+                              >
+                                <a
+                                  onClick={[Function]}
+                                >
+                                  About
+                                </a>
+                              </LinkElement>
+                            </Link>
                           </li>
-                          <li>
-                            <a
-                              href="/"
+                          <li
+                            key="2"
+                          >
+                            <Link
+                              activeClass="bold"
+                              duration={500}
+                              offset={-40}
+                              smooth={true}
+                              spy={true}
+                              to="contacts-anchor"
                             >
-                              Careers
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/"
-                            >
-                              About
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="/"
-                            >
-                              Contacts
-                            </a>
+                              <LinkElement
+                                onClick={[Function]}
+                              >
+                                <a
+                                  onClick={[Function]}
+                                >
+                                  Contacts
+                                </a>
+                              </LinkElement>
+                            </Link>
                           </li>
                         </ul>
                         <div

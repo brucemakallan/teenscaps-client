@@ -288,12 +288,6 @@ exports[`CreateWebsiteSection should render correctly 1`] = `
             </option>
             <option
               key="3"
-              value="SERVICE"
-            >
-              SERVICE
-            </option>
-            <option
-              key="4"
               value="CONTACT"
             >
               CONTACT

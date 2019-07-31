@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { scrollSpy } from 'react-scroll';
+import { scrollSpy, Link } from 'react-scroll';
 import NavBar from '../NavBar';
 import Carousel from '../Carousel';
 import getAllSections from '../../redux/actions/websiteSections';
 import {
-  endpoints, carousel, localFiles, service, about, contact,
+  endpoints, carousel, localFiles, about, contact,
+  navLinks,
 } from '../../common';
 import './home.scss';
 import PageLoader from '../PageLoader';
-import Services from '../Services';
 import About from '../About';
 import Contacts from '../Contacts';
 import ContactForm from '../ContactForm';
@@ -46,7 +46,6 @@ class Home extends Component {
   render() {
     const { sections } = this.props;
     const carouselSection = sections.find(section => section.category === carousel);
-    const services = sections.filter(section => section.category === service);
     const aboutSection = sections.find(section => section.category === about);
     const contacts = sections.filter(section => section.category === contact);
 
@@ -71,12 +70,6 @@ class Home extends Component {
             </ScrollAnimation>
           )}
 
-          {services && services.length > 0 && (
-            <ScrollAnimation animateIn="bounceInUp" duration={1} animateOnce>
-              <Services services={services} />
-            </ScrollAnimation>
-          )}
-
           {contacts && contacts.length > 0 && (
             <ScrollAnimation animateIn="bounceInUp" duration={1} animateOnce>
               <Contacts contacts={contacts} />
@@ -86,11 +79,20 @@ class Home extends Component {
           <div className="large-footer section-padding responsive-flex" style={style}>
             <div className="links-section responsive-flex-child half">
               <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Our Business</a></li>
-                <li><a href="/">Careers</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Contacts</a></li>
+                {navLinks.map((link, index) => (
+                  <li key={String(index)}>
+                    <Link
+                      activeClass="bold"
+                      to={link.to}
+                      spy
+                      smooth
+                      duration={500}
+                      offset={-40}
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
               <div className="social-media">
                 {socialMediaPlatforms.map(platform => (
