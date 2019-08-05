@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
+import {
+  faArrowLeft, faExclamationTriangle, faCheck,
+} from '@fortawesome/free-solid-svg-icons';
 import date from 'date-and-time';
 import ReactMarkdown from 'react-markdown';
 import paths from '../../common';
@@ -67,8 +69,16 @@ class Details extends Component {
     )
   );
 
-  renderValue = (label, value, isArrayOfObjects, isVideos) => {
+  renderValue = (label, value, isArrayOfObjects, isVideos, isRawValue) => {
     if (value) {
+      if (isRawValue) {
+        return (
+          <div className="website-section-property" key={label}>
+            <div className="headingLabel">{label}</div>
+            <div>{value}</div>
+          </div>
+        );
+      }
       if (isVideos) {
         return this.renderListOfVideos(label, value);
       }
@@ -113,19 +123,17 @@ class Details extends Component {
     let dates;
     if (section) {
       mainDetails = [
+        {
+          label: 'Pinned',
+          value: section.pinned && <FontAwesomeIcon icon={faCheck} className="icon green" />,
+          isRawValue: true,
+        },
         { label: 'ID', value: section._id },
-        { label: 'Parent', value: section.parent },
         { label: 'Category', value: section.category.toUpperCase() },
       ];
       otherDetails = [
-        { label: 'Heading1', value: section.heading1 },
-        { label: 'Heading2', value: section.heading2 },
-        { label: 'Heading3', value: section.heading3 },
-        { label: 'Heading4', value: section.heading4 },
-        { label: 'Heading5', value: section.heading5 },
-        { label: 'Heading6', value: section.heading6 },
+        { label: 'Heading', value: section.heading1 },
         { label: 'Body', value: section.body },
-        { label: 'Tags', value: section.tags, isArrayOfObjects: true },
         {
           label: 'Files', value: section.files, isArrayOfObjects: true,
         },
@@ -135,8 +143,6 @@ class Details extends Component {
       ];
       dates = [
         { label: 'Date Created', value: section.dateCreated },
-        { label: 'Date-In', value: section.dateIn },
-        { label: 'Date-Out', value: section.dateOut },
       ];
     }
 
@@ -153,7 +159,7 @@ class Details extends Component {
                 className="btn btn-primary btn-sm button-link"
                 to={`${paths.dashboard.sections}/edit/${section._id}`}
               >
-              Edit
+                Edit
               </Link>
             </div>
             <div className="mainDetails">
@@ -170,7 +176,7 @@ class Details extends Component {
                 <div className="material-card">
                   {mainDetails.map(
                     detail => this.renderValue(
-                      detail.label, detail.value, detail.isArrayOfObjects, detail.isVideos
+                      detail.label, detail.value, detail.isArrayOfObjects, detail.isVideos, detail.isRawValue,
                     )
                   )}
                   {dates.map(dateInput => this.renderDateTime(dateInput.label, dateInput.value))}
@@ -184,7 +190,7 @@ class Details extends Component {
                 </div>
                 {otherDetails.map(
                   detail => this.renderValue(
-                    detail.label, detail.value, detail.isArrayOfObjects, detail.isVideos
+                    detail.label, detail.value, detail.isArrayOfObjects, detail.isVideos, detail.isRawValue,
                   )
                 )}
               </div>
@@ -199,7 +205,9 @@ class Details extends Component {
 Details.propTypes = {
   match: PropTypes.shape({}).isRequired,
   sections: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-  history: PropTypes.shape({}).isRequired,
+  history: PropTypes.shape({
+    goBack: PropTypes.func,
+  }).isRequired,
 };
 
 const mapStateToProps = ({ sectionsReducer }) => ({

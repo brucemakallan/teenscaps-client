@@ -4,7 +4,9 @@ import 'react-table/react-table.css';
 import PropTypes from 'prop-types';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash, faPencilAlt, faEye } from '@fortawesome/free-solid-svg-icons';
+import {
+  faTrash, faPencilAlt, faEye, faCheck,
+} from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import date from 'date-and-time';
 import paths from '../../common';
@@ -26,10 +28,13 @@ const WebsiteSectionsTable = ({ data, saveID }) => (
       }
       columns={[
         { Header: 'Category', accessor: 'category' },
-        { Header: 'Heading1', accessor: 'heading1' },
-        { Header: 'Heading2', accessor: 'heading2' },
-        { Header: 'Heading3', accessor: 'heading3' },
+        { Header: 'Heading', accessor: 'heading1' },
         { Header: 'Body', accessor: 'body' },
+        {
+          Header: 'Pinned',
+          accessor: 'pinned',
+          Cell: ({ value }) => value && <FontAwesomeIcon icon={faCheck} className="icon green" />
+        },
         {
           Header: 'Date Created',
           accessor: 'dateCreated',

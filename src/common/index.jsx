@@ -43,12 +43,24 @@ export const localFiles = {
   },
 };
 
-export const article = 'ARTICLE';
+export const problemSolving = 'SKILL OF PROBLEM SOLVING';
+export const oneself = 'SKILL OF KNOWING AND LIVING WITH ONESELF';
+export const others = 'SKILL OF KNOWING AND LIVING WITH OTHERS';
+export const devotional = 'DEVOTIONAL';
+export const resource = 'RESOURCE';
+export const quiz = 'QUIZ';
+export const gallery = 'GALLERY';
 export const about = 'ABOUT';
 export const carousel = 'CAROUSEL';
 export const contact = 'CONTACT';
 export const entityTypes = [
-  article,
+  devotional,
+  problemSolving,
+  oneself,
+  others,
+  resource,
+  quiz,
+  gallery,
   about,
   carousel,
   contact,

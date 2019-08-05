@@ -58,6 +58,17 @@ export class EditWebsiteSection extends Component {
     }
   }
 
+  handleOnBooleanValueChange = (e) => {
+    const { name, checked } = e.target;
+    const { section } = this.state;
+    this.setState({
+      section: {
+        ...section,
+        [name]: checked,
+      },
+    });
+  }
+
   handleOnArrayChange = (e, propertyArray, index) => { // array with objects
     e.preventDefault();
     const { name, value } = e.target;
@@ -164,6 +175,7 @@ export class EditWebsiteSection extends Component {
       <InputForm
         title="Edit Website Section"
         onChange={this.handleOnChange}
+        onBooleanValueChanged={this.handleOnBooleanValueChange}
         onArrayChange={this.handleOnArrayChange}
         removeRow={this.removeRow}
         addRow={this.addRow}

@@ -43,6 +43,27 @@ class InputForm extends Component {
     </React.Fragment>
   );
 
+  renderBooleanValue = (isBooleanValue, entity, value, fieldName, required, onBooleanValueChanged) => (
+    <React.Fragment>
+      {isBooleanValue
+        && (
+          <div>
+            <input
+              type="checkbox"
+              className="form-control"
+              id={fieldName}
+              name={fieldName}
+              required={required}
+              onChange={onBooleanValueChanged}
+              checked={(entity && !!value)}
+              value={(entity && value)}
+            />
+          </div>
+        )
+      }
+    </React.Fragment>
+  );
+
   renderTextInput = (isTextInput, isNumber, fieldName, required, onChange, entity, value) => (
     <React.Fragment>
       {isTextInput && (
@@ -128,64 +149,64 @@ class InputForm extends Component {
   ) => (
     <React.Fragment>
       {many && value && Array.isArray(value)
-        && (
-          <div>
-            <div className="groupedValues">
-              {value.map((element, index) => (
-                <div key={String(index)} className="flex-container single-element">
-                  <div className="inputFields">
-                    <input
-                      type="text"
-                      className={`form-control ${fieldName}`}
-                      name="title"
-                      placeholder="Title"
-                      onChange={e => onArrayChange(e, value, index)}
-                      value={(element && element.title) || ''}
-                    />
-                    <input
-                      type="text"
-                      className={`form-control ${fieldName}`}
-                      name="description"
-                      placeholder="Description"
-                      onChange={e => onArrayChange(e, value, index)}
-                      value={(element && element.description) || ''}
-                    />
-                    <input
-                      type="text"
-                      className={`form-control ${fieldName}`}
-                      name="source"
-                      placeholder="Source"
-                      onChange={e => onArrayChange(e, value, index)}
-                      value={(element && element.source) || ''}
-                      required
-                    />
-                    {isFileInput && (
-                      <button
-                        type="button"
-                        id="addRowBt"
-                        className="iconBorderedButton m-2"
-                        title="Upload file"
-                        onClick={() => addCloudinaryRawFile(index)}
-                      >
-                        <FontAwesomeIcon icon="cloud-upload-alt" className="icon green" />
-                        Upload File
-                      </button>
-                    )}
+          && (
+            <div>
+              <div className="groupedValues">
+                {value.map((element, index) => (
+                  <div key={String(index)} className="flex-container single-element">
+                    <div className="inputFields">
+                      <input
+                        type="text"
+                        className={`form-control ${fieldName}`}
+                        name="title"
+                        placeholder="Title"
+                        onChange={e => onArrayChange(e, value, index)}
+                        value={(element && element.title) || ''}
+                      />
+                      <input
+                        type="text"
+                        className={`form-control ${fieldName}`}
+                        name="description"
+                        placeholder="Description"
+                        onChange={e => onArrayChange(e, value, index)}
+                        value={(element && element.description) || ''}
+                      />
+                      <input
+                        type="text"
+                        className={`form-control ${fieldName}`}
+                        name="source"
+                        placeholder="Source"
+                        onChange={e => onArrayChange(e, value, index)}
+                        value={(element && element.source) || ''}
+                        required
+                      />
+                      {isFileInput && (
+                        <button
+                          type="button"
+                          id="addRowBt"
+                          className="iconBorderedButton m-2"
+                          title="Upload file"
+                          onClick={() => addCloudinaryRawFile(index)}
+                        >
+                          <FontAwesomeIcon icon="cloud-upload-alt" className="icon green" />
+                          Upload File
+                        </button>
+                      )}
+                    </div>
+                    <button
+                      type="button"
+                      id="removeRowBt"
+                      className="iconButton"
+                      onClick={() => removeRow(value, index)}
+                      title="Remove"
+                    >
+                      <FontAwesomeIcon icon="trash" className="icon red" />
+                    </button>
                   </div>
-                  <button
-                    type="button"
-                    id="removeRowBt"
-                    className="iconButton"
-                    onClick={() => removeRow(value, index)}
-                    title="Remove"
-                  >
-                    <FontAwesomeIcon icon="trash" className="icon red" />
-                  </button>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        )
+          )
       }
       {many && (
         <button
@@ -194,7 +215,7 @@ class InputForm extends Component {
           className="btn btn-sm m-2 btn-outline-primary"
           onClick={() => addRow(value, { title: '', description: '', source: '' })}
         >
-          Add Another
+            Add Another
         </button>
       )}
     </React.Fragment>
@@ -230,7 +251,7 @@ class InputForm extends Component {
           className="btn btn-sm m-2 btn-outline-primary"
           onClick={() => addCloudinaryImage(value)}
         >
-        Upload Image
+          Upload Image
         </button>
       )}
     </React.Fragment>
@@ -242,6 +263,7 @@ class InputForm extends Component {
     fieldName,
     value,
     onChange,
+    onBooleanValueChanged,
     onArrayChange,
     removeRow,
     addRow,
@@ -262,8 +284,10 @@ class InputForm extends Component {
     onTagDrag,
     isDateInput,
     isFileInput,
+    isBooleanValue,
   ) => (
     <div className="form-group" key={String(index)}>
+      {this.renderBooleanValue(isBooleanValue, entity, value, fieldName, required, onBooleanValueChanged)}
       {this.renderLabel(label, required)}
       {this.renderImagesInput(images, value, removeRow, addCloudinaryImage)}
       {this.renderTagInput(isTagInput, value, tagSuggestions, onTagAdd, onTagDelete, onTagDrag)}
@@ -281,6 +305,7 @@ class InputForm extends Component {
     const {
       title,
       onChange,
+      onBooleanValueChanged,
       onArrayChange,
       removeRow,
       addRow,
@@ -288,7 +313,7 @@ class InputForm extends Component {
       addCloudinaryRawFile,
       onSubmit,
       entity,
-      allEntities,
+      // allEntities,
       isNew,
       tagSuggestions,
       onTagAdd,
@@ -298,23 +323,17 @@ class InputForm extends Component {
 
     const formFields = [
       {
+        label: 'Pinned',
+        fieldName: 'pinned',
+        value: entity && entity.pinned,
+        isBooleanValue: true,
+      },
+      {
         label: 'Images',
         fieldName: 'images',
         value: entity && entity.images,
         required: true,
         images: true,
-      },
-      {
-        label: 'Tags',
-        fieldName: 'tags',
-        value: entity && entity.tags,
-        isTagInput: true,
-      },
-      {
-        label: 'Parent',
-        fieldName: 'parent',
-        value: entity && entity.parent,
-        list: allEntities,
       },
       {
         label: 'Category',
@@ -324,39 +343,9 @@ class InputForm extends Component {
         list: entityTypes,
       },
       {
-        label: 'Heading1',
+        label: 'Heading',
         fieldName: 'heading1',
         value: entity && entity.heading1,
-        isTextInput: true,
-      },
-      {
-        label: 'Heading2',
-        fieldName: 'heading2',
-        value: entity && entity.heading2,
-        isTextInput: true,
-      },
-      {
-        label: 'Heading3',
-        fieldName: 'heading3',
-        value: entity && entity.heading3,
-        isTextInput: true,
-      },
-      {
-        label: 'Heading4',
-        fieldName: 'heading4',
-        value: entity && entity.heading4,
-        isTextInput: true,
-      },
-      {
-        label: 'Heading5',
-        fieldName: 'heading5',
-        value: entity && entity.heading5,
-        isTextInput: true,
-      },
-      {
-        label: 'Heading6',
-        fieldName: 'heading6',
-        value: entity && entity.heading6,
         isTextInput: true,
       },
       {
@@ -365,18 +354,6 @@ class InputForm extends Component {
         value: entity && entity.body,
         required: true,
         isTextArea: true,
-      },
-      {
-        label: 'Date-In',
-        fieldName: 'dateIn',
-        value: entity && entity.dateIn,
-        isDateInput: true,
-      },
-      {
-        label: 'Date-Out',
-        fieldName: 'dateOut',
-        value: entity && entity.dateOut,
-        isDateInput: true,
       },
       {
         label: 'Files',
@@ -403,6 +380,7 @@ class InputForm extends Component {
             v.fieldName,
             v.value,
             onChange,
+            onBooleanValueChanged,
             onArrayChange,
             removeRow,
             addRow,
@@ -423,6 +401,7 @@ class InputForm extends Component {
             onTagDrag,
             v.isDateInput,
             v.isFileInput,
+            v.isBooleanValue,
           ))}
           <div className="mb-2">
             <span className="red" title="Required"> * </span>
@@ -443,6 +422,7 @@ class InputForm extends Component {
 InputForm.propTypes = {
   title: PropTypes.string,
   onChange: PropTypes.func.isRequired,
+  onBooleanValueChanged: PropTypes.func.isRequired,
   onArrayChange: PropTypes.func.isRequired,
   removeRow: PropTypes.func.isRequired,
   addRow: PropTypes.func.isRequired,
@@ -450,6 +430,7 @@ InputForm.propTypes = {
   addCloudinaryRawFile: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
   entity: PropTypes.shape({
+    pinned: PropTypes.bool,
     images: PropTypes.arrayOf(PropTypes.string),
     tags: PropTypes.arrayOf(PropTypes.shape()),
     parent: PropTypes.string,
@@ -466,7 +447,7 @@ InputForm.propTypes = {
     files: PropTypes.arrayOf(PropTypes.shape()),
     videos: PropTypes.arrayOf(PropTypes.shape()),
   }),
-  allEntities: PropTypes.arrayOf(PropTypes.shape({})),
+  // allEntities: PropTypes.arrayOf(PropTypes.shape({})),
   isNew: PropTypes.bool,
   tagSuggestions: PropTypes.arrayOf(PropTypes.shape({})),
   onTagAdd: PropTypes.func.isRequired,
@@ -476,7 +457,7 @@ InputForm.propTypes = {
 InputForm.defaultProps = {
   title: 'Create new',
   entity: {},
-  allEntities: [],
+  // allEntities: [],
   isNew: false,
   tagSuggestions: [],
 };
