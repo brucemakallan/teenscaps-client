@@ -51,7 +51,6 @@ exports[`Website Sections should render correctly 1`] = `
             "category": "test",
             "dateCreated": "1553980662739",
             "dateIn": "124231221",
-            "dateOut": "124231222",
             "files": Array [
               Object {
                 "title": "sample file",
@@ -59,15 +58,10 @@ exports[`Website Sections should render correctly 1`] = `
               },
             ],
             "heading1": "test1",
-            "heading2": "test2",
-            "heading3": "test3",
-            "heading4": "test4",
-            "heading5": "test5",
-            "heading6": "test6",
             "images": Array [
               "https://iviidev.info/downloads/images/sample.jpg",
             ],
-            "parent": "312313432223",
+            "pinned": false,
           },
         ]
       }
@@ -83,7 +77,6 @@ exports[`Website Sections should render correctly 1`] = `
               "category": "test",
               "dateCreated": "1553980662739",
               "dateIn": "124231221",
-              "dateOut": "124231222",
               "files": Array [
                 Object {
                   "title": "sample file",
@@ -91,15 +84,10 @@ exports[`Website Sections should render correctly 1`] = `
                 },
               ],
               "heading1": "test1",
-              "heading2": "test2",
-              "heading3": "test3",
-              "heading4": "test4",
-              "heading5": "test5",
-              "heading6": "test6",
               "images": Array [
                 "https://iviidev.info/downloads/images/sample.jpg",
               ],
-              "parent": "312313432223",
+              "pinned": false,
             },
           ]
         }
@@ -187,20 +175,17 @@ exports[`Website Sections should render correctly 1`] = `
                   "accessor": "category",
                 },
                 Object {
-                  "Header": "Heading1",
+                  "Header": "Heading",
                   "accessor": "heading1",
-                },
-                Object {
-                  "Header": "Heading2",
-                  "accessor": "heading2",
-                },
-                Object {
-                  "Header": "Heading3",
-                  "accessor": "heading3",
                 },
                 Object {
                   "Header": "Body",
                   "accessor": "body",
+                },
+                Object {
+                  "Cell": [Function],
+                  "Header": "Pinned",
+                  "accessor": "pinned",
                 },
                 Object {
                   "Cell": [Function],
@@ -227,7 +212,6 @@ exports[`Website Sections should render correctly 1`] = `
                   "category": "test",
                   "dateCreated": "1553980662739",
                   "dateIn": "124231221",
-                  "dateOut": "124231222",
                   "files": Array [
                     Object {
                       "title": "sample file",
@@ -235,15 +219,10 @@ exports[`Website Sections should render correctly 1`] = `
                     },
                   ],
                   "heading1": "test1",
-                  "heading2": "test2",
-                  "heading3": "test3",
-                  "heading4": "test4",
-                  "heading5": "test5",
-                  "heading6": "test6",
                   "images": Array [
                     "https://iviidev.info/downloads/images/sample.jpg",
                   ],
-                  "parent": "312313432223",
+                  "pinned": false,
                 },
               ]
             }
@@ -343,7 +322,7 @@ exports[`Website Sections should render correctly 1`] = `
                     className="-header"
                     style={
                       Object {
-                        "minWidth": "700px",
+                        "minWidth": "600px",
                       }
                     }
                   >
@@ -351,7 +330,7 @@ exports[`Website Sections should render correctly 1`] = `
                       className="rt-thead -header"
                       style={
                         Object {
-                          "minWidth": "700px",
+                          "minWidth": "600px",
                         }
                       }
                     >
@@ -430,7 +409,7 @@ exports[`Website Sections should render correctly 1`] = `
                               <div
                                 className="rt-resizable-header-content"
                               >
-                                Heading1
+                                Heading
                               </div>
                               <Resizer
                                 onMouseDown={[Function]}
@@ -446,91 +425,7 @@ exports[`Website Sections should render correctly 1`] = `
                           </ThComponent>
                           <ThComponent
                             className="rt-resizable-header -cursor-pointer"
-                            key="2-heading2"
-                            style={
-                              Object {
-                                "flex": "100 0 auto",
-                                "maxWidth": null,
-                                "width": "100px",
-                              }
-                            }
-                            toggleSort={[Function]}
-                          >
-                            <div
-                              className="rt-th rt-resizable-header -cursor-pointer"
-                              onClick={[Function]}
-                              role="columnheader"
-                              style={
-                                Object {
-                                  "flex": "100 0 auto",
-                                  "maxWidth": null,
-                                  "width": "100px",
-                                }
-                              }
-                              tabIndex="-1"
-                            >
-                              <div
-                                className="rt-resizable-header-content"
-                              >
-                                Heading2
-                              </div>
-                              <Resizer
-                                onMouseDown={[Function]}
-                                onTouchStart={[Function]}
-                              >
-                                <div
-                                  className="rt-resizer"
-                                  onMouseDown={[Function]}
-                                  onTouchStart={[Function]}
-                                />
-                              </Resizer>
-                            </div>
-                          </ThComponent>
-                          <ThComponent
-                            className="rt-resizable-header -cursor-pointer"
-                            key="3-heading3"
-                            style={
-                              Object {
-                                "flex": "100 0 auto",
-                                "maxWidth": null,
-                                "width": "100px",
-                              }
-                            }
-                            toggleSort={[Function]}
-                          >
-                            <div
-                              className="rt-th rt-resizable-header -cursor-pointer"
-                              onClick={[Function]}
-                              role="columnheader"
-                              style={
-                                Object {
-                                  "flex": "100 0 auto",
-                                  "maxWidth": null,
-                                  "width": "100px",
-                                }
-                              }
-                              tabIndex="-1"
-                            >
-                              <div
-                                className="rt-resizable-header-content"
-                              >
-                                Heading3
-                              </div>
-                              <Resizer
-                                onMouseDown={[Function]}
-                                onTouchStart={[Function]}
-                              >
-                                <div
-                                  className="rt-resizer"
-                                  onMouseDown={[Function]}
-                                  onTouchStart={[Function]}
-                                />
-                              </Resizer>
-                            </div>
-                          </ThComponent>
-                          <ThComponent
-                            className="rt-resizable-header -cursor-pointer"
-                            key="4-body"
+                            key="2-body"
                             style={
                               Object {
                                 "flex": "100 0 auto",
@@ -572,7 +467,49 @@ exports[`Website Sections should render correctly 1`] = `
                           </ThComponent>
                           <ThComponent
                             className="rt-resizable-header -cursor-pointer"
-                            key="5-dateCreated"
+                            key="3-pinned"
+                            style={
+                              Object {
+                                "flex": "100 0 auto",
+                                "maxWidth": null,
+                                "width": "100px",
+                              }
+                            }
+                            toggleSort={[Function]}
+                          >
+                            <div
+                              className="rt-th rt-resizable-header -cursor-pointer"
+                              onClick={[Function]}
+                              role="columnheader"
+                              style={
+                                Object {
+                                  "flex": "100 0 auto",
+                                  "maxWidth": null,
+                                  "width": "100px",
+                                }
+                              }
+                              tabIndex="-1"
+                            >
+                              <div
+                                className="rt-resizable-header-content"
+                              >
+                                Pinned
+                              </div>
+                              <Resizer
+                                onMouseDown={[Function]}
+                                onTouchStart={[Function]}
+                              >
+                                <div
+                                  className="rt-resizer"
+                                  onMouseDown={[Function]}
+                                  onTouchStart={[Function]}
+                                />
+                              </Resizer>
+                            </div>
+                          </ThComponent>
+                          <ThComponent
+                            className="rt-resizable-header -cursor-pointer"
+                            key="4-dateCreated"
                             style={
                               Object {
                                 "flex": "100 0 auto",
@@ -614,7 +551,7 @@ exports[`Website Sections should render correctly 1`] = `
                           </ThComponent>
                           <ThComponent
                             className="rt-resizable-header"
-                            key="6-_id"
+                            key="5-_id"
                             style={
                               Object {
                                 "flex": "100 0 auto",
@@ -662,7 +599,7 @@ exports[`Website Sections should render correctly 1`] = `
                     className="-filters"
                     style={
                       Object {
-                        "minWidth": "700px",
+                        "minWidth": "600px",
                       }
                     }
                   >
@@ -670,7 +607,7 @@ exports[`Website Sections should render correctly 1`] = `
                       className="rt-thead -filters"
                       style={
                         Object {
-                          "minWidth": "700px",
+                          "minWidth": "600px",
                         }
                       }
                     >
@@ -785,7 +722,7 @@ exports[`Website Sections should render correctly 1`] = `
                                     "Expander": undefined,
                                     "Filter": undefined,
                                     "Footer": undefined,
-                                    "Header": "Heading1",
+                                    "Header": "Heading",
                                     "Pivot": undefined,
                                     "PivotValue": undefined,
                                     "Placeholder": undefined,
@@ -829,155 +766,7 @@ exports[`Website Sections should render correctly 1`] = `
                           </ThComponent>
                           <ThComponent
                             className=""
-                            key="2-heading2"
-                            style={
-                              Object {
-                                "flex": "100 0 auto",
-                                "maxWidth": null,
-                                "width": "100px",
-                              }
-                            }
-                          >
-                            <div
-                              className="rt-th"
-                              onClick={[Function]}
-                              role="columnheader"
-                              style={
-                                Object {
-                                  "flex": "100 0 auto",
-                                  "maxWidth": null,
-                                  "width": "100px",
-                                }
-                              }
-                              tabIndex="-1"
-                            >
-                              <FilterComponent
-                                column={
-                                  Object {
-                                    "Aggregated": undefined,
-                                    "Cell": undefined,
-                                    "Expander": undefined,
-                                    "Filter": undefined,
-                                    "Footer": undefined,
-                                    "Header": "Heading2",
-                                    "Pivot": undefined,
-                                    "PivotValue": undefined,
-                                    "Placeholder": undefined,
-                                    "accessor": [Function],
-                                    "aggregate": undefined,
-                                    "className": "",
-                                    "filterAll": false,
-                                    "filterMethod": undefined,
-                                    "filterable": undefined,
-                                    "footerClassName": "",
-                                    "footerStyle": Object {},
-                                    "getFooterProps": [Function],
-                                    "getHeaderProps": [Function],
-                                    "getProps": [Function],
-                                    "headerClassName": "",
-                                    "headerStyle": Object {},
-                                    "id": "heading2",
-                                    "minResizeWidth": 11,
-                                    "minWidth": 100,
-                                    "resizable": undefined,
-                                    "show": true,
-                                    "sortMethod": undefined,
-                                    "sortable": undefined,
-                                    "style": Object {},
-                                  }
-                                }
-                                onChange={[Function]}
-                              >
-                                <input
-                                  onChange={[Function]}
-                                  style={
-                                    Object {
-                                      "width": "100%",
-                                    }
-                                  }
-                                  type="text"
-                                  value=""
-                                />
-                              </FilterComponent>
-                            </div>
-                          </ThComponent>
-                          <ThComponent
-                            className=""
-                            key="3-heading3"
-                            style={
-                              Object {
-                                "flex": "100 0 auto",
-                                "maxWidth": null,
-                                "width": "100px",
-                              }
-                            }
-                          >
-                            <div
-                              className="rt-th"
-                              onClick={[Function]}
-                              role="columnheader"
-                              style={
-                                Object {
-                                  "flex": "100 0 auto",
-                                  "maxWidth": null,
-                                  "width": "100px",
-                                }
-                              }
-                              tabIndex="-1"
-                            >
-                              <FilterComponent
-                                column={
-                                  Object {
-                                    "Aggregated": undefined,
-                                    "Cell": undefined,
-                                    "Expander": undefined,
-                                    "Filter": undefined,
-                                    "Footer": undefined,
-                                    "Header": "Heading3",
-                                    "Pivot": undefined,
-                                    "PivotValue": undefined,
-                                    "Placeholder": undefined,
-                                    "accessor": [Function],
-                                    "aggregate": undefined,
-                                    "className": "",
-                                    "filterAll": false,
-                                    "filterMethod": undefined,
-                                    "filterable": undefined,
-                                    "footerClassName": "",
-                                    "footerStyle": Object {},
-                                    "getFooterProps": [Function],
-                                    "getHeaderProps": [Function],
-                                    "getProps": [Function],
-                                    "headerClassName": "",
-                                    "headerStyle": Object {},
-                                    "id": "heading3",
-                                    "minResizeWidth": 11,
-                                    "minWidth": 100,
-                                    "resizable": undefined,
-                                    "show": true,
-                                    "sortMethod": undefined,
-                                    "sortable": undefined,
-                                    "style": Object {},
-                                  }
-                                }
-                                onChange={[Function]}
-                              >
-                                <input
-                                  onChange={[Function]}
-                                  style={
-                                    Object {
-                                      "width": "100%",
-                                    }
-                                  }
-                                  type="text"
-                                  value=""
-                                />
-                              </FilterComponent>
-                            </div>
-                          </ThComponent>
-                          <ThComponent
-                            className=""
-                            key="4-body"
+                            key="2-body"
                             style={
                               Object {
                                 "flex": "100 0 auto",
@@ -1051,7 +840,81 @@ exports[`Website Sections should render correctly 1`] = `
                           </ThComponent>
                           <ThComponent
                             className=""
-                            key="5-dateCreated"
+                            key="3-pinned"
+                            style={
+                              Object {
+                                "flex": "100 0 auto",
+                                "maxWidth": null,
+                                "width": "100px",
+                              }
+                            }
+                          >
+                            <div
+                              className="rt-th"
+                              onClick={[Function]}
+                              role="columnheader"
+                              style={
+                                Object {
+                                  "flex": "100 0 auto",
+                                  "maxWidth": null,
+                                  "width": "100px",
+                                }
+                              }
+                              tabIndex="-1"
+                            >
+                              <FilterComponent
+                                column={
+                                  Object {
+                                    "Aggregated": undefined,
+                                    "Cell": [Function],
+                                    "Expander": undefined,
+                                    "Filter": undefined,
+                                    "Footer": undefined,
+                                    "Header": "Pinned",
+                                    "Pivot": undefined,
+                                    "PivotValue": undefined,
+                                    "Placeholder": undefined,
+                                    "accessor": [Function],
+                                    "aggregate": undefined,
+                                    "className": "",
+                                    "filterAll": false,
+                                    "filterMethod": undefined,
+                                    "filterable": undefined,
+                                    "footerClassName": "",
+                                    "footerStyle": Object {},
+                                    "getFooterProps": [Function],
+                                    "getHeaderProps": [Function],
+                                    "getProps": [Function],
+                                    "headerClassName": "",
+                                    "headerStyle": Object {},
+                                    "id": "pinned",
+                                    "minResizeWidth": 11,
+                                    "minWidth": 100,
+                                    "resizable": undefined,
+                                    "show": true,
+                                    "sortMethod": undefined,
+                                    "sortable": undefined,
+                                    "style": Object {},
+                                  }
+                                }
+                                onChange={[Function]}
+                              >
+                                <input
+                                  onChange={[Function]}
+                                  style={
+                                    Object {
+                                      "width": "100%",
+                                    }
+                                  }
+                                  type="text"
+                                  value=""
+                                />
+                              </FilterComponent>
+                            </div>
+                          </ThComponent>
+                          <ThComponent
+                            className=""
+                            key="4-dateCreated"
                             style={
                               Object {
                                 "flex": "100 0 auto",
@@ -1125,7 +988,7 @@ exports[`Website Sections should render correctly 1`] = `
                           </ThComponent>
                           <ThComponent
                             className=""
-                            key="6-_id"
+                            key="5-_id"
                             style={
                               Object {
                                 "flex": "100 0 auto",
@@ -1156,7 +1019,7 @@ exports[`Website Sections should render correctly 1`] = `
                     className=""
                     style={
                       Object {
-                        "minWidth": "700px",
+                        "minWidth": "600px",
                       }
                     }
                   >
@@ -1164,7 +1027,7 @@ exports[`Website Sections should render correctly 1`] = `
                       className="rt-tbody"
                       style={
                         Object {
-                          "minWidth": "700px",
+                          "minWidth": "600px",
                         }
                       }
                     >
@@ -1238,61 +1101,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="2-heading2"
-                                onClick={[Function]}
-                                style={
-                                  Object {
-                                    "flex": "100 0 auto",
-                                    "maxWidth": null,
-                                    "width": "100px",
-                                  }
-                                }
-                              >
-                                <div
-                                  className="rt-td"
-                                  onClick={[Function]}
-                                  role="gridcell"
-                                  style={
-                                    Object {
-                                      "flex": "100 0 auto",
-                                      "maxWidth": null,
-                                      "width": "100px",
-                                    }
-                                  }
-                                >
-                                  test2
-                                </div>
-                              </TdComponent>
-                              <TdComponent
-                                className=""
-                                key="3-heading3"
-                                onClick={[Function]}
-                                style={
-                                  Object {
-                                    "flex": "100 0 auto",
-                                    "maxWidth": null,
-                                    "width": "100px",
-                                  }
-                                }
-                              >
-                                <div
-                                  className="rt-td"
-                                  onClick={[Function]}
-                                  role="gridcell"
-                                  style={
-                                    Object {
-                                      "flex": "100 0 auto",
-                                      "maxWidth": null,
-                                      "width": "100px",
-                                    }
-                                  }
-                                >
-                                  test3
-                                </div>
-                              </TdComponent>
-                              <TdComponent
-                                className=""
-                                key="4-body"
+                                key="2-body"
                                 onClick={[Function]}
                                 style={
                                   Object {
@@ -1319,7 +1128,161 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="5-dateCreated"
+                                key="3-pinned"
+                                onClick={[Function]}
+                                style={
+                                  Object {
+                                    "flex": "100 0 auto",
+                                    "maxWidth": null,
+                                    "width": "100px",
+                                  }
+                                }
+                              >
+                                <div
+                                  className="rt-td"
+                                  onClick={[Function]}
+                                  role="gridcell"
+                                  style={
+                                    Object {
+                                      "flex": "100 0 auto",
+                                      "maxWidth": null,
+                                      "width": "100px",
+                                    }
+                                  }
+                                >
+                                  <Cell
+                                    classes={
+                                      Array [
+                                        undefined,
+                                        "",
+                                        undefined,
+                                      ]
+                                    }
+                                    column={
+                                      Object {
+                                        "Aggregated": undefined,
+                                        "Cell": [Function],
+                                        "Expander": undefined,
+                                        "Filter": undefined,
+                                        "Footer": undefined,
+                                        "Header": "Pinned",
+                                        "Pivot": undefined,
+                                        "PivotValue": undefined,
+                                        "Placeholder": undefined,
+                                        "accessor": [Function],
+                                        "aggregate": undefined,
+                                        "className": "",
+                                        "filterAll": false,
+                                        "filterMethod": undefined,
+                                        "filterable": undefined,
+                                        "footerClassName": "",
+                                        "footerStyle": Object {},
+                                        "getFooterProps": [Function],
+                                        "getHeaderProps": [Function],
+                                        "getProps": [Function],
+                                        "headerClassName": "",
+                                        "headerStyle": Object {},
+                                        "id": "pinned",
+                                        "minResizeWidth": 11,
+                                        "minWidth": 100,
+                                        "resizable": undefined,
+                                        "show": true,
+                                        "sortMethod": undefined,
+                                        "sortable": undefined,
+                                        "style": Object {},
+                                      }
+                                    }
+                                    columnProps={
+                                      Object {
+                                        "className": undefined,
+                                        "rest": Object {},
+                                        "style": undefined,
+                                      }
+                                    }
+                                    index={0}
+                                    level={0}
+                                    nestingPath={
+                                      Array [
+                                        0,
+                                      ]
+                                    }
+                                    original={
+                                      Object {
+                                        "__v": 0,
+                                        "_id": "5c9fdcf69c5e1a0d891d506e",
+                                        "array": Array [],
+                                        "body": "test",
+                                        "category": "test",
+                                        "dateCreated": "1553980662739",
+                                        "dateIn": "124231221",
+                                        "files": Array [
+                                          Object {
+                                            "title": "sample file",
+                                            "url": "https://iviidev.info/downloads/files/sample.pdf",
+                                          },
+                                        ],
+                                        "heading1": "test1",
+                                        "images": Array [
+                                          "https://iviidev.info/downloads/images/sample.jpg",
+                                        ],
+                                        "pinned": false,
+                                      }
+                                    }
+                                    page={0}
+                                    pageSize={10}
+                                    resized={Array []}
+                                    row={
+                                      Object {
+                                        "_id": "5c9fdcf69c5e1a0d891d506e",
+                                        "_index": 0,
+                                        "_nestingLevel": 0,
+                                        "_original": Object {
+                                          "__v": 0,
+                                          "_id": "5c9fdcf69c5e1a0d891d506e",
+                                          "array": Array [],
+                                          "body": "test",
+                                          "category": "test",
+                                          "dateCreated": "1553980662739",
+                                          "dateIn": "124231221",
+                                          "files": Array [
+                                            Object {
+                                              "title": "sample file",
+                                              "url": "https://iviidev.info/downloads/files/sample.pdf",
+                                            },
+                                          ],
+                                          "heading1": "test1",
+                                          "images": Array [
+                                            "https://iviidev.info/downloads/images/sample.jpg",
+                                          ],
+                                          "pinned": false,
+                                        },
+                                        "_subRows": undefined,
+                                        "_viewIndex": 0,
+                                        "body": "test",
+                                        "category": "test",
+                                        "dateCreated": "1553980662739",
+                                        "heading1": "test1",
+                                        "pinned": false,
+                                      }
+                                    }
+                                    show={true}
+                                    styles={Object {}}
+                                    tdProps={
+                                      Object {
+                                        "className": undefined,
+                                        "rest": Object {},
+                                        "style": undefined,
+                                      }
+                                    }
+                                    value={false}
+                                    viewIndex={0}
+                                    width={100}
+                                  />
+                                </div>
+                              </TdComponent>
+                              <TdComponent
+                                className=""
+                                key="4-dateCreated"
                                 onClick={[Function]}
                                 style={
                                   Object {
@@ -1406,7 +1369,6 @@ exports[`Website Sections should render correctly 1`] = `
                                         "category": "test",
                                         "dateCreated": "1553980662739",
                                         "dateIn": "124231221",
-                                        "dateOut": "124231222",
                                         "files": Array [
                                           Object {
                                             "title": "sample file",
@@ -1414,15 +1376,10 @@ exports[`Website Sections should render correctly 1`] = `
                                           },
                                         ],
                                         "heading1": "test1",
-                                        "heading2": "test2",
-                                        "heading3": "test3",
-                                        "heading4": "test4",
-                                        "heading5": "test5",
-                                        "heading6": "test6",
                                         "images": Array [
                                           "https://iviidev.info/downloads/images/sample.jpg",
                                         ],
-                                        "parent": "312313432223",
+                                        "pinned": false,
                                       }
                                     }
                                     page={0}
@@ -1441,7 +1398,6 @@ exports[`Website Sections should render correctly 1`] = `
                                           "category": "test",
                                           "dateCreated": "1553980662739",
                                           "dateIn": "124231221",
-                                          "dateOut": "124231222",
                                           "files": Array [
                                             Object {
                                               "title": "sample file",
@@ -1449,15 +1405,10 @@ exports[`Website Sections should render correctly 1`] = `
                                             },
                                           ],
                                           "heading1": "test1",
-                                          "heading2": "test2",
-                                          "heading3": "test3",
-                                          "heading4": "test4",
-                                          "heading5": "test5",
-                                          "heading6": "test6",
                                           "images": Array [
                                             "https://iviidev.info/downloads/images/sample.jpg",
                                           ],
-                                          "parent": "312313432223",
+                                          "pinned": false,
                                         },
                                         "_subRows": undefined,
                                         "_viewIndex": 0,
@@ -1465,8 +1416,7 @@ exports[`Website Sections should render correctly 1`] = `
                                         "category": "test",
                                         "dateCreated": "1553980662739",
                                         "heading1": "test1",
-                                        "heading2": "test2",
-                                        "heading3": "test3",
+                                        "pinned": false,
                                       }
                                     }
                                     show={true}
@@ -1488,7 +1438,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className="text-center"
-                                key="6-_id"
+                                key="5-_id"
                                 onClick={[Function]}
                                 style={
                                   Object {
@@ -1575,7 +1525,6 @@ exports[`Website Sections should render correctly 1`] = `
                                         "category": "test",
                                         "dateCreated": "1553980662739",
                                         "dateIn": "124231221",
-                                        "dateOut": "124231222",
                                         "files": Array [
                                           Object {
                                             "title": "sample file",
@@ -1583,15 +1532,10 @@ exports[`Website Sections should render correctly 1`] = `
                                           },
                                         ],
                                         "heading1": "test1",
-                                        "heading2": "test2",
-                                        "heading3": "test3",
-                                        "heading4": "test4",
-                                        "heading5": "test5",
-                                        "heading6": "test6",
                                         "images": Array [
                                           "https://iviidev.info/downloads/images/sample.jpg",
                                         ],
-                                        "parent": "312313432223",
+                                        "pinned": false,
                                       }
                                     }
                                     page={0}
@@ -1610,7 +1554,6 @@ exports[`Website Sections should render correctly 1`] = `
                                           "category": "test",
                                           "dateCreated": "1553980662739",
                                           "dateIn": "124231221",
-                                          "dateOut": "124231222",
                                           "files": Array [
                                             Object {
                                               "title": "sample file",
@@ -1618,15 +1561,10 @@ exports[`Website Sections should render correctly 1`] = `
                                             },
                                           ],
                                           "heading1": "test1",
-                                          "heading2": "test2",
-                                          "heading3": "test3",
-                                          "heading4": "test4",
-                                          "heading5": "test5",
-                                          "heading6": "test6",
                                           "images": Array [
                                             "https://iviidev.info/downloads/images/sample.jpg",
                                           ],
-                                          "parent": "312313432223",
+                                          "pinned": false,
                                         },
                                         "_subRows": undefined,
                                         "_viewIndex": 0,
@@ -1634,8 +1572,7 @@ exports[`Website Sections should render correctly 1`] = `
                                         "category": "test",
                                         "dateCreated": "1553980662739",
                                         "heading1": "test1",
-                                        "heading2": "test2",
-                                        "heading3": "test3",
+                                        "pinned": false,
                                       }
                                     }
                                     show={true}
@@ -1878,7 +1815,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="2-heading2"
+                                key="2-body"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -1907,7 +1844,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="3-heading3"
+                                key="3-pinned"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -1936,36 +1873,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="4-body"
-                                style={
-                                  Object {
-                                    "flex": "100 0 auto",
-                                    "maxWidth": null,
-                                    "width": "100px",
-                                  }
-                                }
-                              >
-                                <div
-                                  className="rt-td"
-                                  role="gridcell"
-                                  style={
-                                    Object {
-                                      "flex": "100 0 auto",
-                                      "maxWidth": null,
-                                      "width": "100px",
-                                    }
-                                  }
-                                >
-                                  <PadRowComponent>
-                                    <span>
-                                       
-                                    </span>
-                                  </PadRowComponent>
-                                </div>
-                              </TdComponent>
-                              <TdComponent
-                                className=""
-                                key="5-dateCreated"
+                                key="4-dateCreated"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -1994,7 +1902,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className="text-center"
-                                key="6-_id"
+                                key="5-_id"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2101,7 +2009,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="2-heading2"
+                                key="2-body"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2130,7 +2038,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="3-heading3"
+                                key="3-pinned"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2159,36 +2067,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="4-body"
-                                style={
-                                  Object {
-                                    "flex": "100 0 auto",
-                                    "maxWidth": null,
-                                    "width": "100px",
-                                  }
-                                }
-                              >
-                                <div
-                                  className="rt-td"
-                                  role="gridcell"
-                                  style={
-                                    Object {
-                                      "flex": "100 0 auto",
-                                      "maxWidth": null,
-                                      "width": "100px",
-                                    }
-                                  }
-                                >
-                                  <PadRowComponent>
-                                    <span>
-                                       
-                                    </span>
-                                  </PadRowComponent>
-                                </div>
-                              </TdComponent>
-                              <TdComponent
-                                className=""
-                                key="5-dateCreated"
+                                key="4-dateCreated"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2217,7 +2096,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className="text-center"
-                                key="6-_id"
+                                key="5-_id"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2324,7 +2203,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="2-heading2"
+                                key="2-body"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2353,7 +2232,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="3-heading3"
+                                key="3-pinned"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2382,36 +2261,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="4-body"
-                                style={
-                                  Object {
-                                    "flex": "100 0 auto",
-                                    "maxWidth": null,
-                                    "width": "100px",
-                                  }
-                                }
-                              >
-                                <div
-                                  className="rt-td"
-                                  role="gridcell"
-                                  style={
-                                    Object {
-                                      "flex": "100 0 auto",
-                                      "maxWidth": null,
-                                      "width": "100px",
-                                    }
-                                  }
-                                >
-                                  <PadRowComponent>
-                                    <span>
-                                       
-                                    </span>
-                                  </PadRowComponent>
-                                </div>
-                              </TdComponent>
-                              <TdComponent
-                                className=""
-                                key="5-dateCreated"
+                                key="4-dateCreated"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2440,7 +2290,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className="text-center"
-                                key="6-_id"
+                                key="5-_id"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2547,7 +2397,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="2-heading2"
+                                key="2-body"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2576,7 +2426,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="3-heading3"
+                                key="3-pinned"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2605,36 +2455,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="4-body"
-                                style={
-                                  Object {
-                                    "flex": "100 0 auto",
-                                    "maxWidth": null,
-                                    "width": "100px",
-                                  }
-                                }
-                              >
-                                <div
-                                  className="rt-td"
-                                  role="gridcell"
-                                  style={
-                                    Object {
-                                      "flex": "100 0 auto",
-                                      "maxWidth": null,
-                                      "width": "100px",
-                                    }
-                                  }
-                                >
-                                  <PadRowComponent>
-                                    <span>
-                                       
-                                    </span>
-                                  </PadRowComponent>
-                                </div>
-                              </TdComponent>
-                              <TdComponent
-                                className=""
-                                key="5-dateCreated"
+                                key="4-dateCreated"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2663,7 +2484,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className="text-center"
-                                key="6-_id"
+                                key="5-_id"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2770,7 +2591,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="2-heading2"
+                                key="2-body"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2799,7 +2620,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="3-heading3"
+                                key="3-pinned"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2828,36 +2649,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="4-body"
-                                style={
-                                  Object {
-                                    "flex": "100 0 auto",
-                                    "maxWidth": null,
-                                    "width": "100px",
-                                  }
-                                }
-                              >
-                                <div
-                                  className="rt-td"
-                                  role="gridcell"
-                                  style={
-                                    Object {
-                                      "flex": "100 0 auto",
-                                      "maxWidth": null,
-                                      "width": "100px",
-                                    }
-                                  }
-                                >
-                                  <PadRowComponent>
-                                    <span>
-                                       
-                                    </span>
-                                  </PadRowComponent>
-                                </div>
-                              </TdComponent>
-                              <TdComponent
-                                className=""
-                                key="5-dateCreated"
+                                key="4-dateCreated"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2886,7 +2678,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className="text-center"
-                                key="6-_id"
+                                key="5-_id"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -2993,7 +2785,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="2-heading2"
+                                key="2-body"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3022,7 +2814,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="3-heading3"
+                                key="3-pinned"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3051,36 +2843,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="4-body"
-                                style={
-                                  Object {
-                                    "flex": "100 0 auto",
-                                    "maxWidth": null,
-                                    "width": "100px",
-                                  }
-                                }
-                              >
-                                <div
-                                  className="rt-td"
-                                  role="gridcell"
-                                  style={
-                                    Object {
-                                      "flex": "100 0 auto",
-                                      "maxWidth": null,
-                                      "width": "100px",
-                                    }
-                                  }
-                                >
-                                  <PadRowComponent>
-                                    <span>
-                                       
-                                    </span>
-                                  </PadRowComponent>
-                                </div>
-                              </TdComponent>
-                              <TdComponent
-                                className=""
-                                key="5-dateCreated"
+                                key="4-dateCreated"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3109,7 +2872,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className="text-center"
-                                key="6-_id"
+                                key="5-_id"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3216,7 +2979,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="2-heading2"
+                                key="2-body"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3245,7 +3008,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="3-heading3"
+                                key="3-pinned"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3274,36 +3037,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="4-body"
-                                style={
-                                  Object {
-                                    "flex": "100 0 auto",
-                                    "maxWidth": null,
-                                    "width": "100px",
-                                  }
-                                }
-                              >
-                                <div
-                                  className="rt-td"
-                                  role="gridcell"
-                                  style={
-                                    Object {
-                                      "flex": "100 0 auto",
-                                      "maxWidth": null,
-                                      "width": "100px",
-                                    }
-                                  }
-                                >
-                                  <PadRowComponent>
-                                    <span>
-                                       
-                                    </span>
-                                  </PadRowComponent>
-                                </div>
-                              </TdComponent>
-                              <TdComponent
-                                className=""
-                                key="5-dateCreated"
+                                key="4-dateCreated"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3332,7 +3066,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className="text-center"
-                                key="6-_id"
+                                key="5-_id"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3439,7 +3173,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="2-heading2"
+                                key="2-body"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3468,7 +3202,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="3-heading3"
+                                key="3-pinned"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3497,36 +3231,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="4-body"
-                                style={
-                                  Object {
-                                    "flex": "100 0 auto",
-                                    "maxWidth": null,
-                                    "width": "100px",
-                                  }
-                                }
-                              >
-                                <div
-                                  className="rt-td"
-                                  role="gridcell"
-                                  style={
-                                    Object {
-                                      "flex": "100 0 auto",
-                                      "maxWidth": null,
-                                      "width": "100px",
-                                    }
-                                  }
-                                >
-                                  <PadRowComponent>
-                                    <span>
-                                       
-                                    </span>
-                                  </PadRowComponent>
-                                </div>
-                              </TdComponent>
-                              <TdComponent
-                                className=""
-                                key="5-dateCreated"
+                                key="4-dateCreated"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3555,7 +3260,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className="text-center"
-                                key="6-_id"
+                                key="5-_id"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3662,7 +3367,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="2-heading2"
+                                key="2-body"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3691,7 +3396,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="3-heading3"
+                                key="3-pinned"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3720,36 +3425,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className=""
-                                key="4-body"
-                                style={
-                                  Object {
-                                    "flex": "100 0 auto",
-                                    "maxWidth": null,
-                                    "width": "100px",
-                                  }
-                                }
-                              >
-                                <div
-                                  className="rt-td"
-                                  role="gridcell"
-                                  style={
-                                    Object {
-                                      "flex": "100 0 auto",
-                                      "maxWidth": null,
-                                      "width": "100px",
-                                    }
-                                  }
-                                >
-                                  <PadRowComponent>
-                                    <span>
-                                       
-                                    </span>
-                                  </PadRowComponent>
-                                </div>
-                              </TdComponent>
-                              <TdComponent
-                                className=""
-                                key="5-dateCreated"
+                                key="4-dateCreated"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3778,7 +3454,7 @@ exports[`Website Sections should render correctly 1`] = `
                               </TdComponent>
                               <TdComponent
                                 className="text-center"
-                                key="6-_id"
+                                key="5-_id"
                                 style={
                                   Object {
                                     "flex": "100 0 auto",
@@ -3877,7 +3553,7 @@ exports[`Website Sections should render correctly 1`] = `
                         "Expander": undefined,
                         "Filter": undefined,
                         "Footer": undefined,
-                        "Header": "Heading1",
+                        "Header": "Heading",
                         "Pivot": undefined,
                         "PivotValue": undefined,
                         "Placeholder": undefined,
@@ -3895,70 +3571,6 @@ exports[`Website Sections should render correctly 1`] = `
                         "headerClassName": "",
                         "headerStyle": Object {},
                         "id": "heading1",
-                        "minResizeWidth": 11,
-                        "minWidth": 100,
-                        "resizable": undefined,
-                        "show": true,
-                        "sortMethod": undefined,
-                        "sortable": undefined,
-                        "style": Object {},
-                      },
-                      Object {
-                        "Aggregated": undefined,
-                        "Cell": undefined,
-                        "Expander": undefined,
-                        "Filter": undefined,
-                        "Footer": undefined,
-                        "Header": "Heading2",
-                        "Pivot": undefined,
-                        "PivotValue": undefined,
-                        "Placeholder": undefined,
-                        "accessor": [Function],
-                        "aggregate": undefined,
-                        "className": "",
-                        "filterAll": false,
-                        "filterMethod": undefined,
-                        "filterable": undefined,
-                        "footerClassName": "",
-                        "footerStyle": Object {},
-                        "getFooterProps": [Function],
-                        "getHeaderProps": [Function],
-                        "getProps": [Function],
-                        "headerClassName": "",
-                        "headerStyle": Object {},
-                        "id": "heading2",
-                        "minResizeWidth": 11,
-                        "minWidth": 100,
-                        "resizable": undefined,
-                        "show": true,
-                        "sortMethod": undefined,
-                        "sortable": undefined,
-                        "style": Object {},
-                      },
-                      Object {
-                        "Aggregated": undefined,
-                        "Cell": undefined,
-                        "Expander": undefined,
-                        "Filter": undefined,
-                        "Footer": undefined,
-                        "Header": "Heading3",
-                        "Pivot": undefined,
-                        "PivotValue": undefined,
-                        "Placeholder": undefined,
-                        "accessor": [Function],
-                        "aggregate": undefined,
-                        "className": "",
-                        "filterAll": false,
-                        "filterMethod": undefined,
-                        "filterable": undefined,
-                        "footerClassName": "",
-                        "footerStyle": Object {},
-                        "getFooterProps": [Function],
-                        "getHeaderProps": [Function],
-                        "getProps": [Function],
-                        "headerClassName": "",
-                        "headerStyle": Object {},
-                        "id": "heading3",
                         "minResizeWidth": 11,
                         "minWidth": 100,
                         "resizable": undefined,
@@ -3991,6 +3603,38 @@ exports[`Website Sections should render correctly 1`] = `
                         "headerClassName": "",
                         "headerStyle": Object {},
                         "id": "body",
+                        "minResizeWidth": 11,
+                        "minWidth": 100,
+                        "resizable": undefined,
+                        "show": true,
+                        "sortMethod": undefined,
+                        "sortable": undefined,
+                        "style": Object {},
+                      },
+                      Object {
+                        "Aggregated": undefined,
+                        "Cell": [Function],
+                        "Expander": undefined,
+                        "Filter": undefined,
+                        "Footer": undefined,
+                        "Header": "Pinned",
+                        "Pivot": undefined,
+                        "PivotValue": undefined,
+                        "Placeholder": undefined,
+                        "accessor": [Function],
+                        "aggregate": undefined,
+                        "className": "",
+                        "filterAll": false,
+                        "filterMethod": undefined,
+                        "filterable": undefined,
+                        "footerClassName": "",
+                        "footerStyle": Object {},
+                        "getFooterProps": [Function],
+                        "getHeaderProps": [Function],
+                        "getProps": [Function],
+                        "headerClassName": "",
+                        "headerStyle": Object {},
+                        "id": "pinned",
                         "minResizeWidth": 11,
                         "minWidth": 100,
                         "resizable": undefined,
@@ -4105,7 +3749,7 @@ exports[`Website Sections should render correctly 1`] = `
                         "Expander": undefined,
                         "Filter": undefined,
                         "Footer": undefined,
-                        "Header": "Heading1",
+                        "Header": "Heading",
                         "Pivot": undefined,
                         "PivotValue": undefined,
                         "Placeholder": undefined,
@@ -4123,70 +3767,6 @@ exports[`Website Sections should render correctly 1`] = `
                         "headerClassName": "",
                         "headerStyle": Object {},
                         "id": "heading1",
-                        "minResizeWidth": 11,
-                        "minWidth": 100,
-                        "resizable": undefined,
-                        "show": true,
-                        "sortMethod": undefined,
-                        "sortable": undefined,
-                        "style": Object {},
-                      },
-                      Object {
-                        "Aggregated": undefined,
-                        "Cell": undefined,
-                        "Expander": undefined,
-                        "Filter": undefined,
-                        "Footer": undefined,
-                        "Header": "Heading2",
-                        "Pivot": undefined,
-                        "PivotValue": undefined,
-                        "Placeholder": undefined,
-                        "accessor": [Function],
-                        "aggregate": undefined,
-                        "className": "",
-                        "filterAll": false,
-                        "filterMethod": undefined,
-                        "filterable": undefined,
-                        "footerClassName": "",
-                        "footerStyle": Object {},
-                        "getFooterProps": [Function],
-                        "getHeaderProps": [Function],
-                        "getProps": [Function],
-                        "headerClassName": "",
-                        "headerStyle": Object {},
-                        "id": "heading2",
-                        "minResizeWidth": 11,
-                        "minWidth": 100,
-                        "resizable": undefined,
-                        "show": true,
-                        "sortMethod": undefined,
-                        "sortable": undefined,
-                        "style": Object {},
-                      },
-                      Object {
-                        "Aggregated": undefined,
-                        "Cell": undefined,
-                        "Expander": undefined,
-                        "Filter": undefined,
-                        "Footer": undefined,
-                        "Header": "Heading3",
-                        "Pivot": undefined,
-                        "PivotValue": undefined,
-                        "Placeholder": undefined,
-                        "accessor": [Function],
-                        "aggregate": undefined,
-                        "className": "",
-                        "filterAll": false,
-                        "filterMethod": undefined,
-                        "filterable": undefined,
-                        "footerClassName": "",
-                        "footerStyle": Object {},
-                        "getFooterProps": [Function],
-                        "getHeaderProps": [Function],
-                        "getProps": [Function],
-                        "headerClassName": "",
-                        "headerStyle": Object {},
-                        "id": "heading3",
                         "minResizeWidth": 11,
                         "minWidth": 100,
                         "resizable": undefined,
@@ -4219,6 +3799,38 @@ exports[`Website Sections should render correctly 1`] = `
                         "headerClassName": "",
                         "headerStyle": Object {},
                         "id": "body",
+                        "minResizeWidth": 11,
+                        "minWidth": 100,
+                        "resizable": undefined,
+                        "show": true,
+                        "sortMethod": undefined,
+                        "sortable": undefined,
+                        "style": Object {},
+                      },
+                      Object {
+                        "Aggregated": undefined,
+                        "Cell": [Function],
+                        "Expander": undefined,
+                        "Filter": undefined,
+                        "Footer": undefined,
+                        "Header": "Pinned",
+                        "Pivot": undefined,
+                        "PivotValue": undefined,
+                        "Placeholder": undefined,
+                        "accessor": [Function],
+                        "aggregate": undefined,
+                        "className": "",
+                        "filterAll": false,
+                        "filterMethod": undefined,
+                        "filterable": undefined,
+                        "footerClassName": "",
+                        "footerStyle": Object {},
+                        "getFooterProps": [Function],
+                        "getHeaderProps": [Function],
+                        "getProps": [Function],
+                        "headerClassName": "",
+                        "headerStyle": Object {},
+                        "id": "pinned",
                         "minResizeWidth": 11,
                         "minWidth": 100,
                         "resizable": undefined,
@@ -4337,20 +3949,17 @@ exports[`Website Sections should render correctly 1`] = `
                         "accessor": "category",
                       },
                       Object {
-                        "Header": "Heading1",
+                        "Header": "Heading",
                         "accessor": "heading1",
-                      },
-                      Object {
-                        "Header": "Heading2",
-                        "accessor": "heading2",
-                      },
-                      Object {
-                        "Header": "Heading3",
-                        "accessor": "heading3",
                       },
                       Object {
                         "Header": "Body",
                         "accessor": "body",
+                      },
+                      Object {
+                        "Cell": [Function],
+                        "Header": "Pinned",
+                        "accessor": "pinned",
                       },
                       Object {
                         "Cell": [Function],
@@ -4378,7 +3987,6 @@ exports[`Website Sections should render correctly 1`] = `
                         "category": "test",
                         "dateCreated": "1553980662739",
                         "dateIn": "124231221",
-                        "dateOut": "124231222",
                         "files": Array [
                           Object {
                             "title": "sample file",
@@ -4386,15 +3994,10 @@ exports[`Website Sections should render correctly 1`] = `
                           },
                         ],
                         "heading1": "test1",
-                        "heading2": "test2",
-                        "heading3": "test3",
-                        "heading4": "test4",
-                        "heading5": "test5",
-                        "heading6": "test6",
                         "images": Array [
                           "https://iviidev.info/downloads/images/sample.jpg",
                         ],
-                        "parent": "312313432223",
+                        "pinned": false,
                       },
                     ]
                   }
@@ -4498,7 +4101,6 @@ exports[`Website Sections should render correctly 1`] = `
                           "category": "test",
                           "dateCreated": "1553980662739",
                           "dateIn": "124231221",
-                          "dateOut": "124231222",
                           "files": Array [
                             Object {
                               "title": "sample file",
@@ -4506,23 +4108,17 @@ exports[`Website Sections should render correctly 1`] = `
                             },
                           ],
                           "heading1": "test1",
-                          "heading2": "test2",
-                          "heading3": "test3",
-                          "heading4": "test4",
-                          "heading5": "test5",
-                          "heading6": "test6",
                           "images": Array [
                             "https://iviidev.info/downloads/images/sample.jpg",
                           ],
-                          "parent": "312313432223",
+                          "pinned": false,
                         },
                         "_subRows": undefined,
                         "body": "test",
                         "category": "test",
                         "dateCreated": "1553980662739",
                         "heading1": "test1",
-                        "heading2": "test2",
-                        "heading3": "test3",
+                        "pinned": false,
                       },
                     ]
                   }
@@ -4550,7 +4146,6 @@ exports[`Website Sections should render correctly 1`] = `
                           "category": "test",
                           "dateCreated": "1553980662739",
                           "dateIn": "124231221",
-                          "dateOut": "124231222",
                           "files": Array [
                             Object {
                               "title": "sample file",
@@ -4558,23 +4153,17 @@ exports[`Website Sections should render correctly 1`] = `
                             },
                           ],
                           "heading1": "test1",
-                          "heading2": "test2",
-                          "heading3": "test3",
-                          "heading4": "test4",
-                          "heading5": "test5",
-                          "heading6": "test6",
                           "images": Array [
                             "https://iviidev.info/downloads/images/sample.jpg",
                           ],
-                          "parent": "312313432223",
+                          "pinned": false,
                         },
                         "_subRows": undefined,
                         "body": "test",
                         "category": "test",
                         "dateCreated": "1553980662739",
                         "heading1": "test1",
-                        "heading2": "test2",
-                        "heading3": "test3",
+                        "pinned": false,
                       },
                     ]
                   }

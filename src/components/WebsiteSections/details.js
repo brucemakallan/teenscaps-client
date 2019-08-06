@@ -143,6 +143,7 @@ class Details extends Component {
       ];
       dates = [
         { label: 'Date Created', value: section.dateCreated },
+        { label: 'Date-In', value: section.dateIn },
       ];
     }
 

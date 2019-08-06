@@ -20,6 +20,7 @@ describe('InputForm', () => {
       onTagAdd: jest.fn(),
       onTagDelete: jest.fn(),
       onTagDrag: jest.fn(),
+      onBooleanValueChanged: jest.fn(),
     };
   });
 

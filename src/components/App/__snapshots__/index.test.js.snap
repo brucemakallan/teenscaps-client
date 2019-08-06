@@ -182,7 +182,6 @@ exports[`App should render correctly 1`] = `
                       "category": "test",
                       "dateCreated": "1553980662739",
                       "dateIn": "124231221",
-                      "dateOut": "124231222",
                       "files": Array [
                         Object {
                           "title": "sample file",
@@ -190,15 +189,10 @@ exports[`App should render correctly 1`] = `
                         },
                       ],
                       "heading1": "test1",
-                      "heading2": "test2",
-                      "heading3": "test3",
-                      "heading4": "test4",
-                      "heading5": "test5",
-                      "heading6": "test6",
                       "images": Array [
                         "https://iviidev.info/downloads/images/sample.jpg",
                       ],
-                      "parent": "312313432223",
+                      "pinned": false,
                     },
                   ]
                 }
@@ -531,7 +525,6 @@ exports[`App should render correctly 1`] = `
                                   "category": "test",
                                   "dateCreated": "1553980662739",
                                   "dateIn": "124231221",
-                                  "dateOut": "124231222",
                                   "files": Array [
                                     Object {
                                       "title": "sample file",
@@ -539,15 +532,10 @@ exports[`App should render correctly 1`] = `
                                     },
                                   ],
                                   "heading1": "test1",
-                                  "heading2": "test2",
-                                  "heading3": "test3",
-                                  "heading4": "test4",
-                                  "heading5": "test5",
-                                  "heading6": "test6",
                                   "images": Array [
                                     "https://iviidev.info/downloads/images/sample.jpg",
                                   ],
-                                  "parent": "312313432223",
+                                  "pinned": false,
                                 },
                                 "sections": Array [
                                   Object {
@@ -558,7 +546,6 @@ exports[`App should render correctly 1`] = `
                                     "category": "test",
                                     "dateCreated": "1553980662739",
                                     "dateIn": "124231221",
-                                    "dateOut": "124231222",
                                     "files": Array [
                                       Object {
                                         "title": "sample file",
@@ -566,15 +553,10 @@ exports[`App should render correctly 1`] = `
                                       },
                                     ],
                                     "heading1": "test1",
-                                    "heading2": "test2",
-                                    "heading3": "test3",
-                                    "heading4": "test4",
-                                    "heading5": "test5",
-                                    "heading6": "test6",
                                     "images": Array [
                                       "https://iviidev.info/downloads/images/sample.jpg",
                                     ],
-                                    "parent": "312313432223",
+                                    "pinned": false,
                                   },
                                 ],
                               }

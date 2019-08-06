@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/brucemakallan/teenscaps-client.svg?branch=develop)](https://travis-ci.org/brucemakallan/teenscaps-client)
 
-# TeensCaps API
+# TeensCaps Client
 
 #### LIFE Ministries Uganda.
 Teenagers LIFE Skills, Devotionals, and Resources.

@@ -343,6 +343,12 @@ class InputForm extends Component {
         list: entityTypes,
       },
       {
+        label: 'Date',
+        fieldName: 'dateIn',
+        value: entity && entity.dateIn,
+        isDateInput: true,
+      },
+      {
         label: 'Heading',
         fieldName: 'heading1',
         value: entity && entity.heading1,

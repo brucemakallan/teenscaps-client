@@ -15,7 +15,6 @@ exports[`InputForm should render correctly 1`] = `
         "category": "test",
         "dateCreated": "1553980662739",
         "dateIn": "124231221",
-        "dateOut": "124231222",
         "files": Array [
           Object {
             "title": "sample file",
@@ -23,15 +22,10 @@ exports[`InputForm should render correctly 1`] = `
           },
         ],
         "heading1": "test1",
-        "heading2": "test2",
-        "heading3": "test3",
-        "heading4": "test4",
-        "heading5": "test5",
-        "heading6": "test6",
         "images": Array [
           "https://iviidev.info/downloads/images/sample.jpg",
         ],
-        "parent": "312313432223",
+        "pinned": false,
       },
     ]
   }
@@ -44,7 +38,6 @@ exports[`InputForm should render correctly 1`] = `
       "category": "test",
       "dateCreated": "1553980662739",
       "dateIn": "124231221",
-      "dateOut": "124231222",
       "files": Array [
         Object {
           "title": "sample file",
@@ -52,19 +45,15 @@ exports[`InputForm should render correctly 1`] = `
         },
       ],
       "heading1": "test1",
-      "heading2": "test2",
-      "heading3": "test3",
-      "heading4": "test4",
-      "heading5": "test5",
-      "heading6": "test6",
       "images": Array [
         "https://iviidev.info/downloads/images/sample.jpg",
       ],
-      "parent": "312313432223",
+      "pinned": false,
     }
   }
   isNew={false}
   onArrayChange={[MockFunction]}
+  onBooleanValueChanged={[MockFunction]}
   onChange={[MockFunction]}
   onSubmit={[MockFunction]}
   onTagAdd={[MockFunction]}
@@ -86,6 +75,25 @@ exports[`InputForm should render correctly 1`] = `
       <div
         className="form-group"
         key="0"
+      >
+        <div>
+          <input
+            checked={false}
+            className="form-control"
+            id="pinned"
+            name="pinned"
+            onChange={[MockFunction]}
+            type="checkbox"
+            value={false}
+          />
+        </div>
+        <div>
+          Pinned
+        </div>
+      </div>
+      <div
+        className="form-group"
+        key="1"
       >
         <div>
           Images
@@ -173,130 +181,7 @@ exports[`InputForm should render correctly 1`] = `
       </div>
       <div
         className="form-group"
-        key="1"
-      >
-        <div>
-          Tags
-        </div>
-        <div
-          className="tags"
-        >
-          <DragDropContext(ReactTags)
-            delimiters={
-              Array [
-                188,
-                13,
-              ]
-            }
-            handleAddition={[MockFunction]}
-            handleDelete={[MockFunction]}
-            handleDrag={[MockFunction]}
-            suggestions={Array []}
-          >
-            <ReactTags
-              allowAdditionFromPaste={true}
-              allowDeleteFromEmptyInput={true}
-              allowDragDrop={true}
-              allowUnique={true}
-              autocomplete={false}
-              autofocus={true}
-              delimiters={
-                Array [
-                  188,
-                  13,
-                ]
-              }
-              handleAddition={[MockFunction]}
-              handleDelete={[MockFunction]}
-              handleDrag={[MockFunction]}
-              inline={true}
-              inputFieldPosition="inline"
-              labelField="text"
-              placeholder="Add new tag"
-              readOnly={false}
-              resetInputOnDelete={true}
-              suggestions={Array []}
-              tags={Array []}
-            >
-              <div
-                className="ReactTags__tags react-tags-wrapper"
-              >
-                <div
-                  className="ReactTags__selected"
-                >
-                  <div
-                    className="ReactTags__tagInput"
-                  >
-                    <input
-                      aria-label="Add new tag"
-                      className="ReactTags__tagInputField"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      onPaste={[Function]}
-                      placeholder="Add new tag"
-                      type="text"
-                    />
-                    <Suggestions
-                      classNames={
-                        Object {
-                          "activeSuggestion": "ReactTags__activeSuggestion",
-                          "remove": "ReactTags__remove",
-                          "selected": "ReactTags__selected",
-                          "suggestions": "ReactTags__suggestions",
-                          "tag": "ReactTags__tag",
-                          "tagInput": "ReactTags__tagInput",
-                          "tagInputField": "ReactTags__tagInputField",
-                          "tags": "ReactTags__tags",
-                        }
-                      }
-                      handleClick={[Function]}
-                      handleHover={[Function]}
-                      isFocused={false}
-                      labelField="text"
-                      minQueryLength={2}
-                      query=""
-                      selectedIndex={-1}
-                      suggestions={Array []}
-                    />
-                  </div>
-                </div>
-              </div>
-            </ReactTags>
-          </DragDropContext(ReactTags)>
-        </div>
-      </div>
-      <div
-        className="form-group"
         key="2"
-      >
-        <div>
-          Parent
-        </div>
-        <select
-          className="form-control"
-          id="parent"
-          name="parent"
-          onChange={[MockFunction]}
-          value="312313432223"
-        >
-          <option
-            value=""
-          >
-            N/A
-          </option>
-          <option
-            key="0"
-            value="5c9fdcf69c5e1a0d891d506e"
-          >
-            TEST: 5c9fdcf69c5e1a0d891d506e test1
-          </option>
-        </select>
-      </div>
-      <div
-        className="form-group"
-        key="3"
       >
         <div>
           Category
@@ -317,24 +202,60 @@ exports[`InputForm should render correctly 1`] = `
         >
           <option
             key="0"
-            value="ARTICLE"
+            value="DEVOTIONAL"
           >
-            ARTICLE
+            DEVOTIONAL
           </option>
           <option
             key="1"
+            value="SKILL OF PROBLEM SOLVING"
+          >
+            SKILL OF PROBLEM SOLVING
+          </option>
+          <option
+            key="2"
+            value="SKILL OF KNOWING AND LIVING WITH ONESELF"
+          >
+            SKILL OF KNOWING AND LIVING WITH ONESELF
+          </option>
+          <option
+            key="3"
+            value="SKILL OF KNOWING AND LIVING WITH OTHERS"
+          >
+            SKILL OF KNOWING AND LIVING WITH OTHERS
+          </option>
+          <option
+            key="4"
+            value="RESOURCE"
+          >
+            RESOURCE
+          </option>
+          <option
+            key="5"
+            value="QUIZ"
+          >
+            QUIZ
+          </option>
+          <option
+            key="6"
+            value="GALLERY"
+          >
+            GALLERY
+          </option>
+          <option
+            key="7"
             value="ABOUT"
           >
             ABOUT
           </option>
           <option
-            key="2"
+            key="8"
             value="CAROUSEL"
           >
             CAROUSEL
           </option>
           <option
-            key="3"
+            key="9"
             value="CONTACT"
           >
             CONTACT
@@ -343,10 +264,26 @@ exports[`InputForm should render correctly 1`] = `
       </div>
       <div
         className="form-group"
+        key="3"
+      >
+        <div>
+          Date
+        </div>
+        <input
+          className="form-control"
+          defaultValue="1970-01-02"
+          id="dateIn"
+          name="dateIn"
+          onChange={[Function]}
+          type="date"
+        />
+      </div>
+      <div
+        className="form-group"
         key="4"
       >
         <div>
-          Heading1
+          Heading
         </div>
         <input
           className="form-control"
@@ -360,86 +297,6 @@ exports[`InputForm should render correctly 1`] = `
       <div
         className="form-group"
         key="5"
-      >
-        <div>
-          Heading2
-        </div>
-        <input
-          className="form-control"
-          defaultValue="test2"
-          id="heading2"
-          name="heading2"
-          onChange={[MockFunction]}
-          type="text"
-        />
-      </div>
-      <div
-        className="form-group"
-        key="6"
-      >
-        <div>
-          Heading3
-        </div>
-        <input
-          className="form-control"
-          defaultValue="test3"
-          id="heading3"
-          name="heading3"
-          onChange={[MockFunction]}
-          type="text"
-        />
-      </div>
-      <div
-        className="form-group"
-        key="7"
-      >
-        <div>
-          Heading4
-        </div>
-        <input
-          className="form-control"
-          defaultValue="test4"
-          id="heading4"
-          name="heading4"
-          onChange={[MockFunction]}
-          type="text"
-        />
-      </div>
-      <div
-        className="form-group"
-        key="8"
-      >
-        <div>
-          Heading5
-        </div>
-        <input
-          className="form-control"
-          defaultValue="test5"
-          id="heading5"
-          name="heading5"
-          onChange={[MockFunction]}
-          type="text"
-        />
-      </div>
-      <div
-        className="form-group"
-        key="9"
-      >
-        <div>
-          Heading6
-        </div>
-        <input
-          className="form-control"
-          defaultValue="test6"
-          id="heading6"
-          name="heading6"
-          onChange={[MockFunction]}
-          type="text"
-        />
-      </div>
-      <div
-        className="form-group"
-        key="10"
       >
         <div>
           Body
@@ -462,39 +319,7 @@ exports[`InputForm should render correctly 1`] = `
       </div>
       <div
         className="form-group"
-        key="11"
-      >
-        <div>
-          Date-In
-        </div>
-        <input
-          className="form-control"
-          defaultValue="1970-01-02"
-          id="dateIn"
-          name="dateIn"
-          onChange={[Function]}
-          type="date"
-        />
-      </div>
-      <div
-        className="form-group"
-        key="12"
-      >
-        <div>
-          Date-Out
-        </div>
-        <input
-          className="form-control"
-          defaultValue="1970-01-02"
-          id="dateOut"
-          name="dateOut"
-          onChange={[Function]}
-          type="date"
-        />
-      </div>
-      <div
-        className="form-group"
-        key="13"
+        key="6"
       >
         <div>
           Files
@@ -639,7 +464,7 @@ exports[`InputForm should render correctly 1`] = `
       </div>
       <div
         className="form-group"
-        key="14"
+        key="7"
       >
         <div>
           Youtube Videos

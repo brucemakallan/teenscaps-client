@@ -59,7 +59,6 @@ exports[`Website Section Details should render correctly 1`] = `
               "category": "test",
               "dateCreated": "1553980662739",
               "dateIn": "124231221",
-              "dateOut": "124231222",
               "files": Array [
                 Object {
                   "title": "sample file",
@@ -67,15 +66,10 @@ exports[`Website Section Details should render correctly 1`] = `
                 },
               ],
               "heading1": "test1",
-              "heading2": "test2",
-              "heading3": "test3",
-              "heading4": "test4",
-              "heading5": "test5",
-              "heading6": "test6",
               "images": Array [
                 "https://iviidev.info/downloads/images/sample.jpg",
               ],
-              "parent": "312313432223",
+              "pinned": false,
             },
           ]
         }
@@ -104,7 +98,6 @@ exports[`Website Section Details should render correctly 1`] = `
                 "category": "test",
                 "dateCreated": "1553980662739",
                 "dateIn": "124231221",
-                "dateOut": "124231222",
                 "files": Array [
                   Object {
                     "title": "sample file",
@@ -112,15 +105,10 @@ exports[`Website Section Details should render correctly 1`] = `
                   },
                 ],
                 "heading1": "test1",
-                "heading2": "test2",
-                "heading3": "test3",
-                "heading4": "test4",
-                "heading5": "test5",
-                "heading6": "test6",
                 "images": Array [
                   "https://iviidev.info/downloads/images/sample.jpg",
                 ],
-                "parent": "312313432223",
+                "pinned": false,
               },
             ]
           }
@@ -399,44 +387,6 @@ exports[`Website Section Details should render correctly 1`] = `
                 </div>
                 <div
                   className="website-section-property"
-                  key="Parent"
-                >
-                  <div
-                    className="headingLabel"
-                  >
-                    Parent
-                  </div>
-                  <ReactMarkdown
-                    astPlugins={Array []}
-                    escapeHtml={true}
-                    parserOptions={Object {}}
-                    plugins={Array []}
-                    rawSourcePos={false}
-                    renderers={Object {}}
-                    skipHtml={false}
-                    source="312313432223"
-                    sourcePos={false}
-                    transformLinkUri={[Function]}
-                  >
-                    <Root
-                      key="root-1-1"
-                    >
-                      <p
-                        key="paragraph-1-1"
-                      >
-                        <TextRenderer
-                          key="text-1-1"
-                          nodeKey="text-1-1"
-                          value="312313432223"
-                        >
-                          312313432223
-                        </TextRenderer>
-                      </p>
-                    </Root>
-                  </ReactMarkdown>
-                </div>
-                <div
-                  className="website-section-property"
                   key="Category"
                 >
                   <div
@@ -499,19 +449,6 @@ exports[`Website Section Details should render correctly 1`] = `
                     Fri 02 Jan 1970 13:30:31 +0300
                   </span>
                 </div>
-                <div
-                  className="website-section-property"
-                  key="Date-Out"
-                >
-                  <div
-                    className="headingLabel"
-                  >
-                    Date-Out
-                  </div>
-                  <span>
-                    Fri 02 Jan 1970 13:30:31 +0300
-                  </span>
-                </div>
               </div>
             </div>
           </div>
@@ -528,12 +465,12 @@ exports[`Website Section Details should render correctly 1`] = `
               </div>
               <div
                 className="website-section-property"
-                key="Heading1"
+                key="Heading"
               >
                 <div
                   className="headingLabel"
                 >
-                  Heading1
+                  Heading
                 </div>
                 <ReactMarkdown
                   astPlugins={Array []}
@@ -559,196 +496,6 @@ exports[`Website Section Details should render correctly 1`] = `
                         value="test1"
                       >
                         test1
-                      </TextRenderer>
-                    </p>
-                  </Root>
-                </ReactMarkdown>
-              </div>
-              <div
-                className="website-section-property"
-                key="Heading2"
-              >
-                <div
-                  className="headingLabel"
-                >
-                  Heading2
-                </div>
-                <ReactMarkdown
-                  astPlugins={Array []}
-                  escapeHtml={true}
-                  parserOptions={Object {}}
-                  plugins={Array []}
-                  rawSourcePos={false}
-                  renderers={Object {}}
-                  skipHtml={false}
-                  source="test2"
-                  sourcePos={false}
-                  transformLinkUri={[Function]}
-                >
-                  <Root
-                    key="root-1-1"
-                  >
-                    <p
-                      key="paragraph-1-1"
-                    >
-                      <TextRenderer
-                        key="text-1-1"
-                        nodeKey="text-1-1"
-                        value="test2"
-                      >
-                        test2
-                      </TextRenderer>
-                    </p>
-                  </Root>
-                </ReactMarkdown>
-              </div>
-              <div
-                className="website-section-property"
-                key="Heading3"
-              >
-                <div
-                  className="headingLabel"
-                >
-                  Heading3
-                </div>
-                <ReactMarkdown
-                  astPlugins={Array []}
-                  escapeHtml={true}
-                  parserOptions={Object {}}
-                  plugins={Array []}
-                  rawSourcePos={false}
-                  renderers={Object {}}
-                  skipHtml={false}
-                  source="test3"
-                  sourcePos={false}
-                  transformLinkUri={[Function]}
-                >
-                  <Root
-                    key="root-1-1"
-                  >
-                    <p
-                      key="paragraph-1-1"
-                    >
-                      <TextRenderer
-                        key="text-1-1"
-                        nodeKey="text-1-1"
-                        value="test3"
-                      >
-                        test3
-                      </TextRenderer>
-                    </p>
-                  </Root>
-                </ReactMarkdown>
-              </div>
-              <div
-                className="website-section-property"
-                key="Heading4"
-              >
-                <div
-                  className="headingLabel"
-                >
-                  Heading4
-                </div>
-                <ReactMarkdown
-                  astPlugins={Array []}
-                  escapeHtml={true}
-                  parserOptions={Object {}}
-                  plugins={Array []}
-                  rawSourcePos={false}
-                  renderers={Object {}}
-                  skipHtml={false}
-                  source="test4"
-                  sourcePos={false}
-                  transformLinkUri={[Function]}
-                >
-                  <Root
-                    key="root-1-1"
-                  >
-                    <p
-                      key="paragraph-1-1"
-                    >
-                      <TextRenderer
-                        key="text-1-1"
-                        nodeKey="text-1-1"
-                        value="test4"
-                      >
-                        test4
-                      </TextRenderer>
-                    </p>
-                  </Root>
-                </ReactMarkdown>
-              </div>
-              <div
-                className="website-section-property"
-                key="Heading5"
-              >
-                <div
-                  className="headingLabel"
-                >
-                  Heading5
-                </div>
-                <ReactMarkdown
-                  astPlugins={Array []}
-                  escapeHtml={true}
-                  parserOptions={Object {}}
-                  plugins={Array []}
-                  rawSourcePos={false}
-                  renderers={Object {}}
-                  skipHtml={false}
-                  source="test5"
-                  sourcePos={false}
-                  transformLinkUri={[Function]}
-                >
-                  <Root
-                    key="root-1-1"
-                  >
-                    <p
-                      key="paragraph-1-1"
-                    >
-                      <TextRenderer
-                        key="text-1-1"
-                        nodeKey="text-1-1"
-                        value="test5"
-                      >
-                        test5
-                      </TextRenderer>
-                    </p>
-                  </Root>
-                </ReactMarkdown>
-              </div>
-              <div
-                className="website-section-property"
-                key="Heading6"
-              >
-                <div
-                  className="headingLabel"
-                >
-                  Heading6
-                </div>
-                <ReactMarkdown
-                  astPlugins={Array []}
-                  escapeHtml={true}
-                  parserOptions={Object {}}
-                  plugins={Array []}
-                  rawSourcePos={false}
-                  renderers={Object {}}
-                  skipHtml={false}
-                  source="test6"
-                  sourcePos={false}
-                  transformLinkUri={[Function]}
-                >
-                  <Root
-                    key="root-1-1"
-                  >
-                    <p
-                      key="paragraph-1-1"
-                    >
-                      <TextRenderer
-                        key="text-1-1"
-                        nodeKey="text-1-1"
-                        value="test6"
-                      >
-                        test6
                       </TextRenderer>
                     </p>
                   </Root>
@@ -844,7 +591,7 @@ exports[`Website Section Details should render correctly 1`] = `
                       transform={null}
                     >
                       <svg
-                        aria-labelledby="svg-inline--fa-title-tfnalfpVPqoO"
+                        aria-labelledby="svg-inline--fa-title-jckbaHoHvrnc"
                         className="svg-inline--fa fa-file-pdf fa-w-12 file-icon"
                         data-icon="file-pdf"
                         data-prefix="fas"
@@ -854,7 +601,7 @@ exports[`Website Section Details should render correctly 1`] = `
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <title
-                          id="svg-inline--fa-title-tfnalfpVPqoO"
+                          id="svg-inline--fa-title-jckbaHoHvrnc"
                           style={Object {}}
                         >
                           file
