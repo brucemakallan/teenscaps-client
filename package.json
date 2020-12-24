@@ -30,7 +30,7 @@
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.5",
     "coveralls": "^3.0.5",
-    "date-and-time": "^0.8.1",
+    "date-and-time": "^0.14.2",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.3.5",
